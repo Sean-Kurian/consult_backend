@@ -1,0 +1,20 @@
+{
+  "name": "consult-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/openai": "^0.0.9",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "langchain": "^0.0.214"
+  }
+}
