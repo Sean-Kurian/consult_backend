@@ -48,8 +48,12 @@ const sowController = async (req, res) => {
     The payment terms are {paymentTerms}.
     `;
 
+    //call fillTemplate
+    const filledTemplate = fillTemplate(template, req.body);
+    console.log(filledTemplate);
+
     // Create a PromptTemplate from the template
-    const promptTemplate = PromptTemplate.fromTemplate(template);
+    const promptTemplate = PromptTemplate.fromTemplate(filledTemplate);
 
     // Create a new ChatOpenAI model
     const model = new ChatOpenAI({
@@ -65,10 +69,8 @@ const sowController = async (req, res) => {
 
     // Use the chain to generate the SOW
     const result = await chain.invoke(parameters);
-    const filledTemplate = fillTemplate(template, req.body);
-    console.log(filledTemplate);
 
-    return res.json({ sow: template });
+    return res.json({ sow: result });
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: "Internal Server Error" });
