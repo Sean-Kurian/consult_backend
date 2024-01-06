@@ -15,7 +15,7 @@ const sowController = async (req, res) => {
     };
 
     // Create a template for the SOW
-    const template = ` You are a helpful assistant. Help the user write a Statement of Work for a consulting project. 
+    const template = ` You are a helpful assistant. Help the user write a Statement of Work for a consulting project. Re
 
     The scope of this project is to {scope}.
     The deliverables for this project will be {deliverables}.
