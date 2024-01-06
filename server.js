@@ -6,7 +6,7 @@ import testRouter from "./src/routes/route.js";
 import cors from "cors";
 import express from "express";
 import mongoose from 'mongoose';
-import { s3Router } from './s3Upload.js';
+import s3Router from './src/routes/s3Route.js';
 
 const app = express();
 const port = 5000;
@@ -27,12 +27,12 @@ connection.once('open', () => {
 });
 
 app.use(testRouter);
+app.use("/pdf", s3Router);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use("/pdf", s3Router);
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
