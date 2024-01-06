@@ -1,8 +1,9 @@
-const express = require('express')
-const multer = require('multer')
-const multerS3 = require('multer-s3')
-const AWS = require('aws-sdk')
-require('dotenv').config();
+import express from 'express';
+import multer from 'multer';
+import multerS3 from 'multer-s3';
+import AWS from 'aws-sdk';
+import { config } from 'dotenv';
+config();
 
 const BUCKET_NAME = process.env.BUCKET_NAME;
 const REGION = process.env.REGION;
@@ -31,7 +32,7 @@ const uploadWithMulter = () => multer({
     })
 }).array("s3Pdf", 4)
 
-uploadToAws = (req, res) => {
+const uploadToAws = (req, res) => {
     const upload = uploadWithMulter();
 
     upload(req, res, err => {
@@ -48,4 +49,4 @@ const router = express.Router();
 
 router.post('/upload', uploadToAws);
 
-module.exports = router;
+export { router as s3Router };
