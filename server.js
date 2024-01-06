@@ -1,12 +1,13 @@
 // server.js
-import testRouter from './src/routes/route.js';
-import cors from 'cors';
-import express from 'express';
+import { config } from "dotenv";
+config();
+
+import testRouter from "./src/routes/route.js";
+import cors from "cors";
+import express from "express";
 
 const app = express();
 const port = 5000;
-
-
 
 app.use(
   cors({
