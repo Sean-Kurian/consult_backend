@@ -14,7 +14,7 @@ const uploadWithMulter = () => multer({
             cb(null, {fieldname: file.fieldname})
         },
         key: function(req, file, cb) {
-            cb(null, file.originalname)
+            cb(null, 'pdfs/' + Date.now() + '-' + file.originalname)
         }
     })
 }).array("s3Pdf", 4)
