@@ -1,7 +1,7 @@
 import {Schema, model} from 'mongoose';
 
 const fileSchema = new Schema({
-    username: {
+    user_id: {
         type: String,
         required: true,
         trim: true
@@ -16,6 +16,6 @@ const fileSchema = new Schema({
     timestamps: true,
 });
 
-const User = model('User', userSchema);
+const File = model('File', fileSchema);
 
-export default User;
+export default File;
