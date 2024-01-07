@@ -4,5 +4,6 @@
 
 node_modules
 
+# need to change these file directories
 src/controllers/input.docx
 src/controllers/output.docx
