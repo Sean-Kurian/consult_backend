@@ -3,3 +3,6 @@
 .env
 
 node_modules
+
+src/controllers/input.docx
+src/controllers/output.docx
