@@ -15,15 +15,22 @@
     "aws-sdk": "^2.1531.0",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
+    "docx": "^8.5.0",
+    "docxtemplater": "^3.43.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+<<<<<<< HEAD
     "jsonwebtoken": "^9.0.2",
+=======
+    "jszip": "^3.10.1",
+>>>>>>> e266158 (add export to docx)
     "langchain": "^0.0.214",
     "mongodb": "^5.9.2",
     "mongoose": "^8.0.3",
     "multer": "^1.4.5-lts.1",
     "multer-s3": "^3.0.1",
     "nodemon": "^3.0.2",
-    "openai": "^4.24.1"
+    "openai": "^4.24.1",
+    "pizzip": "^3.1.4"
   }
 }

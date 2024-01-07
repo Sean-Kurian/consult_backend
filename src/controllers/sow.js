@@ -3,7 +3,27 @@ import { ChatOpenAI } from "@langchain/openai";
 import { PromptTemplate } from "@langchain/core/prompts";
 import { RunnableSequence } from "@langchain/core/runnables";
 import { StringOutputParser } from "@langchain/core/output_parsers";
+// import * as fs from "fs";
+import { Document, Packer, Paragraph, TextRun } from "docx";
+// import PizZip from "pizzip";
+// import Docxtemplater from "docxtemplater";
 
+// import path from "path";
+
+// import { fileURLToPath } from "url";
+// import { dirname } from "path";
+import JSZip from "jszip";
+import PizZip from "pizzip";
+import Docxtemplater from "docxtemplater";
+import fs from "fs";
+import path from "path";
+
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = dirname(__filename);
+
+const currentDir = path.dirname(new URL(import.meta.url).pathname);
+
+console.log(currentDir);
 const sowController = async (req, res) => {
   try {
     console.log("--");
@@ -39,13 +59,38 @@ const sowController = async (req, res) => {
       }, template + additionalFieldsString);
     };
 
+    // const data = reader.readAsDataURL(currentDir);
+    // var zip = new JSZip();
+    // zip = zip.file(data);
+
+    // // Load the docx file as binary content
+    const content = fs.readFileSync(
+      path.resolve(currentDir, "input.docx"),
+      "binary"
+    );
+
+    console.log(typeof content);
+
+    // // Unzip the content of the file
+    const zip = new PizZip(content);
+    console.log(zip);
+    console.log("0-");
+
+    // This will parse the template, and will throw an error if the template is
+    // invalid, for example, if the template is "{data" (no closing tag)
+    const doc = new Docxtemplater(zip, {
+      paragraphLoop: true,
+      linebreaks: true,
+    });
+
     // Create a template for the SOW
     const template = ` You are a helpful assistant. Help the user write a Statement of Work for a consulting project. 
-
-    The scope of this project is to {scope}.
-    The deliverables for this project will be {deliverables}.
-    The timeline for this project is {timeline}.
-    The payment terms are {paymentTerms}.
+    
+    My organization is {organization}.
+    My client is {client}
+    The confidentiality agreements is/are {confidentiality}.
+    The project scope for this project is {projectScope}.
+    The payment terms are {payment}.
     `;
 
     //call fillTemplate
@@ -68,7 +113,24 @@ const sowController = async (req, res) => {
     const chain = RunnableSequence.from([promptTemplate, model, outputParser]);
 
     // Use the chain to generate the SOW
-    const result = await chain.invoke(parameters);
+    const result = await chain.invoke();
+
+    // Render the document (Replace {data} with openai result)
+    doc.render({
+      data: result,
+    });
+
+    // Get the zip document and generate it as a nodebuffer
+    const buf = doc.getZip().generate({
+      type: "nodebuffer",
+      // compression: DEFLATE adds a compression step.
+      // For a 50MB output document, expect 500ms additional CPU time
+      compression: "DEFLATE",
+    });
+
+    // buf is a nodejs Buffer, you can either write it to a
+    // file or res.send it with express for example.
+    fs.writeFileSync(path.resolve(currentDir, "output.docx"), buf);
 
     return res.json({ sow: result });
   } catch (error) {
