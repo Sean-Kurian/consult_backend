@@ -9,3 +9,12 @@ export async function saveFile(user, fileUrl) {
         return { success: false, message: error.message };
     }
 };
+
+export async function getFiles(user_id) {
+    try {
+        const files = (await File.find({ user_id })).map(file => file.fileUrl);
+        return { success: true, message: "Retrieved files successfully.", files };
+    } catch (error) {
+        return { success: false, message: error.message };
+    }
+}
