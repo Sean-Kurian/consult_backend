@@ -7,6 +7,7 @@ import cors from "cors";
 import express from "express";
 import mongoose from 'mongoose';
 import s3Router from './src/routes/s3Route.js';
+import authRouter from './src/routes/authRoute.js'
 
 const app = express();
 const port = 5000;
@@ -28,6 +29,7 @@ connection.once('open', () => {
 
 app.use(testRouter);
 app.use("/pdf", s3Router);
+app.use("/auth", authRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");

@@ -17,7 +17,7 @@ const uploadWithMulter = () => multer({
             cb(null, 'pdfs/' + Date.now() + '-' + file.originalname)
         }
     })
-}).array("s3Pdf", 4)
+}).single("s3Pdf")
 
 export const uploadToAws = (req, res) => {
     const upload = uploadWithMulter();
