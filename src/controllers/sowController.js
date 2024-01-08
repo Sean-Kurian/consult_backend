@@ -163,7 +163,7 @@ const sowController = async (req, res) => {
               alignment: AlignmentType.CENTER ? index == 1 : "",
               children: [
                 new TextRun({
-                  text: data.replace(/[^a-zA-Z]/g, ""), //fix this to have replaceall
+                  text: data.replace(/[^a-zA-Z ]/g, ""),
                   bold: true,
                 }),
               ],
