@@ -18,6 +18,7 @@ authRouter.post('/login', upload.none(), async (req, res) => {
     if (result.success) {
         // Send the token in the response header
         res.header('Authorization', `Bearer ${result.token}`);
+        res.header('Access-Control-Expose-Headers', 'Authorization');
         res.json({ success: true, message: 'Login successful' });
     } else {
         res.json({ success: false, message: result.message });
