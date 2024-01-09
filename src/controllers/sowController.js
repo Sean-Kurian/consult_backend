@@ -75,7 +75,7 @@ const sowController = async (req, res) => {
     The confidentiality agreements is/are {confidentiality}.
     The project scope for this project is {projectScope}.
     The payment terms are {payment}.
-    Contacts are: {contacts}
+    
     `;
     // -----------------------------------------------
     //1. GATHER REQUEST BODY AND POPULATING TEMPLATE
