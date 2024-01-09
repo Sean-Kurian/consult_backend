@@ -7,6 +7,6 @@ const sowRouter = express.Router();
 
 // Define your routes
 
-sowRouter.get("/sow", sowController);
+sowRouter.post("/sow", sowController);
 
 export default sowRouter;
