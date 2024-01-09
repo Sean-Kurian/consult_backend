@@ -1,0 +1,84 @@
+
+
+
+
+
+
+Data Science Elite Engagement 
+Data and AI Portfolio
+Statement of Work
+Prepared for 
+Regions Financial Corporation
+
+
+April 3, 2020
+Statement of Work
+This Proof of Concept Statement of Work (the “Agreement”) governs activity by which International Business Machines Corporation (“IBM”) and Regions Financial Corporation (“Client”) will collaborate on a data science project (the “Project”).
+Confidentiality
+  
+The Agreement for Exchange of Confidential Information for Technical Information Exchanges (“AECI”) Z125-4322-04 4/2000 (MK002) will govern exchanges of confidential information related to the Project.  All other information exchanged will be considered non-confidential.
+Project Scope & Objective
+
+The Project objective is to evaluate IBM Cloud Pak for Data with the goal of driving business value leveraging data science and artificial intelligence (“AI”). A use case addressing a business issue will be defined through an on-site discovery workshop (“Discovery Workshop”).
+
+The Project includes support from IBM Data Science team members for evaluation of Cloud Pak for Data (the “Platform”). This includes hands on development of a data science use case with Client. Each party will provide data science and other expertise and resources that are sufficient to carry out its Project roles and responsibilities as determined in the Discovery Workshop and will perform those roles and responsibilities at no charge to the other party. IBM data science team will invest no more than 6 weeks of remote and on-site capabilities in executing the business objective defined during the Discovery Workshop. IBM team will work in Agile fashion with the client team with regular cadence meetings and sprint reviews to show progress and business value. Client resources are expected to participate in the project.
+Estimated Project Start Date: April 06th, 2020
+Estimated Project End Date: May 18th, 2020
+Project pre-requisites:
+1) Discovery Workshop to further define the scope project and what will be done by project end date. 
+2) Client provides data and network accessibility to IBM team (may require onboarding of IBM team to access data).
+
+Client Data  
+Client retains its rights to all data provided to IBM for purposes of the Project (“Client-Provided Data”).  Client hereby grants IBM a worldwide, non-exclusive, irrevocable, royalty-free license for the duration of the Project to copy and use the Client-Provided Data solely for purposes of the Project.  Client warrants that it has right to grant the foregoing license to Client-Provided Data and that the Client-Provided Data does not include personal identifiable information, personal health information, or information that is in violation of any laws, rules, regulations, licensing requirements or standards that are in effect when provided and were promulgated by any local, state, and federal governmental authority/agency or accrediting/administrative body that governs or applies to the parties’ respective duties and obligations under this Agreement.   
+Cloud Services  
+If applicable, Client is authorized to use any cloud services (“Cloud Services”) provided by IBM for the Project under the “Terms for Trial Cloud Services” [http://ibm.com/terms/csa] and incorporated herein by reference.
+Client Suggestions  
+Client hereby assigns to IBM all right, title, and interest in and to all suggestions for improvements to the Cloud Services or On-Premises Software (“Suggestions”) and agrees to provide IBM with any assistance that is reasonably necessary for IBM to perfect IBM’s rights in such Suggestions.
+Warranties 
+SUBJECT TO ANY STATUTORY WARRANTIES THAT CANNOT BE EXCLUDED, IBM MAKES NO WARRANTIES OR CONDITIONS, EXPRESS OR IMPLIED, REGARDING ANY DELIVERABLES INCLUDING PROJECT DEVELOPMENTS PROVIDED BY IBM, AS WELL AS CLOUD SERVICES, ON-PREMISES SOFTWARE, ENABLING SOFTWARE, AND SUPPORT (IF ANY), INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, AND TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT. 
+Limitations of Liability 
+Each party’s entire liability for all claims in the aggregate arising hereunder will not exceed the amount of any actual direct damages up to U.S. $10,000, regardless of the basis of the claim. This limit applies collectively to a party, its subsidiaries and contractors. Neither party will be liable for special, incidental, exemplary, indirect, economic, or other consequential damages; loss of or damage to data; or damages for lost profits, business, revenue, goodwill, or anticipated savings.   
+Termination of Project 
+Either party may, after providing a good faith effort to make the Project a success, determine that further participation is unwarranted.  After providing the other party 30 days to demonstrate the value of the Project, the terminating party can terminate this Agreement without cause or liability to the other.  
+Upon termination or completion of the Project, unless Client procures appropriate commercial licenses or agreements, Client will cease using any Cloud Services, if applicable,  and IBM will erase any Client content provided, under the Project.  IBM has no obligation to provide migration services from the Project to any subsequent environment Client chooses to use after the termination of the Project. 
+Compliance with Laws
+Each party remains responsible for complying with laws, rules and regulations applicable to its business, its use of a Cloud Service or Software, and its content, including applicable anti-bribery, anti-corruption, export and import laws and associated embargo and economic sanction regulations.  Client understands and acknowledges that IBM may use global resources (non-permanent residents used locally and personnel in locations worldwide) to remotely support the delivery of Services. Client warrants that none of the Client data exported to, or otherwise accessible by, IBM for the Services is (a) controlled as a defense article under the US International Traffic in Arms Regulation (ITAR) or under any other country’s laws or regulations and (2) requires an export license or is otherwise restricted from export to any global resources or personnel under applicable export control laws.  Client is responsible for any violation of law or any third party rights caused by Client’s content or Client’s use of the Cloud Services or Software.  
+Governing Law
+The parties agree to the application of the laws of the State of New York, United States, without regard to conflict of law principles.  If any provision of this Agreement is invalid or unenforceable, the remaining provisions remain in full force and effect.  
+Independent Parties
+Each party is an independent contractor, not the other’s agent, joint venturer, partner, or fiduciary, and does not undertake to perform any of the other’s regulatory obligations or assume any responsibility for the other’s business or operations.  Each party is responsible for determining the assignment of its personnel and contractors, and for their direction, control, and compensation.  Neither party will assume nor create any obligations on behalf of the other or make any representations or warranties about the other, other than those authorized.
+Notices; Complete Agreement
+All notices under this Agreement must be in writing and sent to the recipient’s address on the signature page, unless a party designates in writing a different address.  The parties consent to the use of electronic means and facsimile transmissions for communications as a signed writing.  Any reproduction of this Agreement made by reliable means is considered an original.  This Agreement supersedes any course of dealing, discussions or representations between the parties.
+General
+No right or cause of action for any third party is created by this Agreement or any transaction under it.  Neither party may assign this Agreement, in whole or in part, without the prior written consent of the other except that either party may assign this Agreement in conjunction with the sale of all or a substantial part of its business that utilizes this Agreement. 
+Neither party will bring a legal action arising out of or related to this Agreement more than two years after the cause of action arose.  Neither party is responsible for failure to fulfill its obligations due to causes beyond its control.  Each party will allow the other reasonable opportunity to comply before it claims the other has not met its obligations.  Where approval, acceptance, consent, access, cooperation or similar action by either party is required, such action will not be unreasonably delayed or withheld.
+Both parties agree that the Project may not be successfully completed, and the results achieved may not be as anticipated at the outset of the Project.  Any changes to either party’s operations in expectation of a successfully completed Project must be based solely on that party’s business judgment.  Neither party has an obligation to provide follow-on services, support or maintenance related to the Project unless explicitly specified in the Agreement.
+Effective Date: last date of signature below
+By signing below, the parties agree to the terms of this Agreement.
+
+Agreed to:
+Regions Financial Corporation
+
+
+Agreed to:   
+International Business Machines Corporation
+
+
+By______________________________________
+Authorized signature
+By_____________________________________
+Authorized signature
+
+
+Name (type or print): 
+Name (type or print):  
+Title: 
+Date:
+Email:
+Mailing address:
+Title:  
+Date:
+Email:
+Mailing address:
+
+

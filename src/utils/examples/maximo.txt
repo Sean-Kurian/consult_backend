@@ -1,0 +1,666 @@
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 1
+Statement of Work No. 1498944
+Asset Performance Monitoring
+This Statement of Work (“SOW”) is entered into by Google LLC (“Google”) and the contractor
+identified below (“Contractor”). This SOW is issued under the Amended and Restated Master
+Services Agreement (Agreement) between Google LLC and International Business Machines
+Corporation dated November 24, 2020 (the “MSA”).
+A. The MSA’s defined terms apply to this SOW unless this SOW expressly states otherwise.
+B. All references to Services and Deliverables below are restricted to the Services and
+Deliverables under this SOW, and not those under the parties’ other SOWs, if any.
+C. The terms in the MSA will take precedence over conflicting terms in this SOW, unless the
+parties expressly agree in this SOW to supersede specific provisions of the MSA.
+D. Contractor (and its Point of Contact) will work with the Google Point of Contact listed
+below.
+E. NO SERVICES MAY BE PERFORMED UNTIL GOOGLE AND CONTRACTOR SIGN
+THIS STATEMENT OF WORK AND GOOGLE ISSUES A VALID PURCHASE ORDER.
+1. Contractor
+Full legal name:
+Point of Contact name:
+Point of Contact telephone:
+Point of Contact email:
+International Business Machines
+Corporation
+stephen.p.bombassei@ibm.com
+(847) 269-8885
+stephen.p.bombassei@ibm.com
+2. Google
+Point of Contact name:
+Point of Contact telephone:
+Point of Contact email:
+Lisa Lange
+(281) 892-9363
+langelisa@google.com
+3. SOW Term
+“SOW Effective Date”
+(Check only one)
+X The date Google signs this SOW
+☐ The following date:
+“SOW End Date” December 31, 2022
+Unless terminated earlier in accordance with the MSA, the SOW will begin
+on the SOW Effective Date and end on the later of:
+A. the SOW End Date; or
+B. the end of the last Inspection Period under this SOW (as described in
+MSA Section 2 (Services and Deliverables)).
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 2
+4. Services and Deliverables. Contractor will provide the following Services and
+Deliverables to Google:
+4.1 Overview and Approach
+Contractor is pleased to present this SOW for Services which will provide architecture, design and
+implementation support for provisioning Maximo Application Suite Health and Predict for Utilities
+(“MAS HPU”) supporting the Google Data Center. Contractor’s IBM Managed Services team will
+establish development, test and production environments to provide the AI-based conditional,
+predictive maintenance of key assets in the data center to ensure business operations continuity
+pursuant to SOW # 1522119. The approach would be to develop the Asset Performance Monitoring
+(“APM”) solution for all identified critical assets in data center and support Google IT to roll the
+solution to other data centers.
+Project Scope
+The scope of this project includes:
+● Prime the Maximo Application Suite (“MAS”) environments with the asset types/instances
+into the IBM provisioned MAS environment. The MAS environments will be provisioned by
+the Contractor’s IBM Managed Services team pursuant to SOW # 1522119.
+● Implement the analytical models for the MAS HPU asset scores, related to health, effective
+age, risk, criticality, and failure probability, for two identified asset classes in a single data
+center identified by Google. For the purposes of this SOW, the two asset classes identified
+are Generators and Switchgear
+● Ingest data related into the MAS platform for the two identified asset classes, assuming
+that the data will be provided in the required MAS data format by Google.
+● Configure the out of the box MAS HPU operational dashboards for the asset health related
+KPI (health/risk/aging/criticality/prob of failure), with actionable services integrating with
+Google’s Maximo instance for appropriate maintenance order processing
+● Validate the personas addressed by MAS HPU and ensure role-based access for the users
+● Provide knowledge transfer to the Google team, so that the Google team is enabled to
+scale the solution out to other data centers and asset classes.
+This solution will ensure business continuity operations, based on the health of the critical assets
+in the data center. The solution will help Google:
+● Actively track asset health, maintenance needs based on data, as opposed to traditional
+scheduled or breakdown maintenance
+● Interface with Google’s existing Maximo for actionable outcomes related to the following
+maintenance strategies:
+o Plan and schedule the maintenance work orders
+Solution Architecture
+MAS HPU capabilities:
+● IBM MAS HPU enables AI-powered remote monitoring at enterprise scale, for asset
+maintenance and operations leaders seeking to improve operating performance with fewer,
+more accurate alerts, and greater insights into what is causing them.
+● Here is a high-level functional architecture diagram for MAS:
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 3
+Included Services
+IBM MAS HPU includes the following container-based Services, that will help Google achieve the
+above business benefits to scale monitoring to the enterprise:
+MAS Platform Analytics Service
+● Data processing and analysis of historical data using the included Analytics Service (avail.
+at https://www.ibm.com/docs/en/mapms/1_cloud?topic=analyzing-data)
+● Data cleansing and transformation
+● Job scheduling
+● Pipeline analysis
+● Data events and actions
+● Alerts and notifications
+● Data service connections
+● MAS Health and Predict Utilities (HPU) provides health models for a subset of assets specific
+to the E&U industry. These out-of-the-box (“OOB”) models provide the following 5 scores
+(Health, Effective Age, End Of Life. Risk, Criticality)
+● MAS Predict provides models related to Failure Probability and Anomaly Detection.
+MAS Database Service
+To store data for all the above Services using the included Database Service. IBM MAS HPU
+supports IBM DB2, Oracle, and Microsoft SQL data stores in an on-premise implementation.
+MAS Object Storage Service
+● To store logs and files for above services using the included Cloud Object Storage Service
+(avail. at https://www.ibm.com/docs/en/mapms/1_cloud?topic=data-accessing-logs)
+● For long term storage of device sensor data
+● To store images
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 4
+MAS Security and Authentication
+When Google uses Maximo Application Suite, Google has a secure end-to-end solution for Google’s
+data and access. Each service component manages the security of its part of the solution.
+Examples:
+● Data security and integrity is managed by each of the storage solutions.
+● User authentication is managed by each component by using the single sign-on method.
+● Inter-service data flow takes place over secure communication with encrypted data per IBM
+Standard Security policies.
+Solution Overview
+In support of Google Data Center Asset, Contractor proposes a solution based on IBM MAS and
+associated components and services. The MAS product combines services for predictive and
+descriptive analytics. The MAS HPU offering incorporates Monitor, Health, and Predict modules for
+asset performance management.
+Technical Solution
+● The detailed architecture of the solution will be developed and documented during the
+initial design phase. The solution will be based on the MAS solution components and will
+attempt to use the out-of-the-box (OOB) capabilities as much as possible. Once the design
+is complete, the assessment of the extent to which the OOB capabilities can be used will
+also be determined and documented.
+System Interfaces
+● As much as possible, standard MAS interfaces to the ingest location, asset and reading
+data into MAS will be used. As part of the initial assumptions, Google will provide the data
+in the MAS HPU CSV file format, and the standard MAS HPU AppConnect ingestion flows
+will be used to ingest data into MAS.
+● Contextual Data – There are additional contextual data that will be provided by Google for
+the customization of the predictive models which will be utilized as part of the predictive
+model building. It is assumed that such data will be made available at regular predefined
+intervals as CSVs. As part of the detailed data exploration phase, the team will identify the
+contextual data required.
+● MAXIMO – Based on initial discussions, Google will expose the required interfaces to the
+existing EAM system to create work orders. These interfaces will then be invoked in the
+IBM MAS solution to create work orders, based on the asset health conditions calculated in
+the MAS platform.
+Users
+● Google will use the MAS system to gain insights into health of the equipment and plan for
+maintenance activities
+● Google Operators and process engineers will use the MAS system to view KPIs to gain
+insights into performance and identify control parameters that need to be adjusted
+Logical Architecture
+● The logical architecture describes the key building blocks that form part of the solution. The
+diagram below depicts the logical architecture of the solution.
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 5
+The key building blocks of the solution are:
+● Integration
+● Analytics
+● Data Services
+● Visualization
+● Reporting
+● Access and Authentication
+Integration
+The planned interfaces are:
+● Data Ingestion into MAS : for asset , location and reading data will be achieved using the
+standard MAS provided interfaces for ingestion. Google will provide data in the required
+format for ingestion by the Google team. The existing MAS AppConnect flows will be used
+for data ingestion.
+● Contextual data – The interface for contextual data is assumed to be CSV files which are
+stored at a common storage point. The interface will read the contextual data periodically
+in terms of CSVs and parse the data and store into data stores within the platform.
+● Interfaces to create work orders in Google’s Maximo EAM system: Google will expose the
+required APIs that would be used to create work orders from the IBM MAS solution.
+Out of the Box Analytical Framework Models
+Analytics forms the key component of the platform.
+Models
+● The MAS platform provides an engine to deploy the predictive models built for the
+identified scenarios. These models are configured to run at periodic intervals providing
+recommendations and scores. The models are unique to each asset and visualized on
+dashboards.
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 6
+● The Analytics Framework provides a machine learning (ML) pipeline which is invoked on
+condition and periodicity for scoring. This processes the raw, on-line data that is received
+from equipment and calculates the KPIs.
+● IBM MAS provides a well-defined methodology for developing the ML pipeline models
+which provide asset health, operating efficiencies and throughput information.
+● Depending on the commonality of data sets for the asset classes across data centers, it
+may be possible for the models developed for initial data center site(s) to be reused and
+replicated for other sites as well.
+Visualization
+● IBM MAS provides out of the box, configurable dashboards for visualizations of analytics
+outputs.
+● These dashboards provide support for different chart types, such as line graphs, text and
+table. The existing MAS OOTB dashboard capabilities will be used to represent different
+visualizations of the analyzed data.
+Access and Authentication
+● The solution will provide for role-based access control. Different users and roles will be
+configured manually in the solution. Different Google users and roles will login to the
+dashboards and view different equipment-related dashboards, based on the user and role.
+● User provisioning onto IBM MAS will be done manually. Up to fifty (50) Google users will be
+onboarded onto the initial pilot system.
+Deployment Architecture
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 7
+Environment Provisioning/Priming for Data Center assets in IBM Managed environment.
+● The MAS will be provisioned in IBM Managed Cloud and Google will support the appropriate
+ports opening for Cloud Object Storage, (COS), based file transfer for data ingestion and
+connectivity to MAXIMO environment.
+● If necessary for Contractor to perform the Services under this SOW, Google will provide
+Contractor access to the MAS on Google’s premises to enable Service requests for
+processing maintenance work orders; provided, however, Contractor shall not have
+unescorted access to Google’s premises. Any Contract Personnel access to Google
+premises shall be escorted.
+Key Assumptions
+This SOW and Contractor’s estimates are based on the following key assumptions. Deviations
+that arise during the proposed project will be managed through the Project Change Control
+Procedure, and may result in adjustments to the project scope, estimated schedule, charges, and
+other terms as applicable.
+a. The Maximo Application Suite (MAS) will be provisioned on IBM Cloud and managed by
+IBM Managed services pursuant to SOW # 1522119. The IBM Managed Cloud environment
+will be priced accordingly in a separate agreement.
+b. All Services will be provided remotely.
+c. Support and development for non-IBM software is out of scope and not included in this
+SOW.
+d. Any changes in the project will be governed by the MSA, Section 2.4 (Change Control
+Procedure).
+e. The scope of this Service contract is limited to a single Google Data Center / Site.
+f. Based on asset prioritization and data availability, two asset classes (generators and
+switchgear) are in scope for this minimum viable product (MVP). If during the detailed
+analysis and model development phase, for either asset class, it is determined that the
+available asset class data is insufficient for building models with required accuracy, the
+Contractor and Google will meet to determine an alternative asset class. At that time,
+based on the additional effort needed, a Change request may need to be created.
+g. Google will be responsible for providing the data in the required format for data ingestion in
+the IBM MAS platform.
+h. Three environments will be required for this project – Development (Dev), Test, and
+Production. Provisioning, installation and management of these environments will be
+handled by IBM Managed Services pursuant to SOW # 1522119 and is not in scope of this
+SOW .
+i. The analytical models for the two asset classes will be based on the out of the box (OOTB)
+models from IBM MAS. Contractor will work with Google’s data to determine if the OOTB
+models can be used and produce accurate results.
+j. Contractor will use two of OOTB models from MAS Predict, namely failure probability
+prediction and anomaly detection, for each asset class.
+k. Contractor will work with the Google asset class SMEs to go through the detailed data
+available and required to build the failure probability prediction and anomaly detection
+models for each asset class.
+l. The quality and accuracy of the models will be a function of the quality of the data available
+for each asset class. For example, to build an accurate failure prediction model, Contractor
+will need a representative sample set of past failures for each asset class.
+m. The identified data needed for data exploration and iterative model building will be made
+available, in the required format, by Google, before the start of the planned activity
+n. The identified data sets required for data ingestion and model scoring will be provided, in
+the required format, by Google, before the start of the planned activity for data ingestion. 
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 8
+o. Contractor will need access to the Google asset class SMEs during initial data exploration
+and model results validation. If at the end of the model building phase for each asset class,
+it is determined that the accuracy of the models is not sufficient for deployment to
+Production, then Contractor and Google will meet to determine the next steps. If the next
+course of action involves additional effort that was not originally estimated in this SOW,
+then a change request will be negotiated in accordance with the MSA, Section 2.4.
+p. In order to access the data and environment, Contractor Personnel will require
+Chromebooks that Google would arrange if necessary for Contractor to perform the
+Services under this SOW. This requirement is subject to change, depending on the
+environment deployment options. Any Google resources provided to Contractor shall
+remain Google property (including Google Intellectual Property).
+q. This SOW does not include the hours needed for support after Go-Live. A separate estimate
+of post Go-Live support hours will be provided.
+r. Contractor will provide information transfer sessions of the solution components used for
+this project. Formal MAS product training is not included in this SOW.
+s. Based on the current plan, model development for both asset classes will be done in
+parallel. Since the deployment in Production and UAT Testing prior to Go-Live will require
+certain activities to be done in parallel, to meet the planned Go-Live dates, Contractor will
+deploy the Generator (for first) asset class into Production, and Google will deploy the
+switchgear (or second) asset class into Production.
+t. The estimated project timeline and estimated number of hours make no allowance for
+delay. Contractor and Google project managers will work closely to mitigate the risks
+associated with any delay and determine if a change request is required, in the event of a
+delay.
+u. If the estimates of related number of asset instances, amount of reading data required for
+model training and scoring, size of the data on disk , and number of concurrent users
+change, the hardware sizing will be re-estimated.
+v. Google will provide existing documentation (data dictionaries, failure code definitions etc,
+for example) relevant to the project.
+w. Active Directory integration to using Google LDAP will be provided OOTB in MAS. This
+feature will support user authentication for all the Google Data Center sites.
+x. Role based access control will be based on what is provided OOTB from MAS.
+y. MAS provides scoring model execution scheduler, with schedule frequency as required by
+Google policy.
+Description of activities under this SOW:
+a. Contractor Responsibilities – High Level
+i. Contractor will validate and verify the Maximo Application Suite Health
+and Predict for Utilities (MAS HPU) environment once the IBM Managed
+Services Team provisions and installs MAS HPU. The installation of the
+MAS HPU software in the three environments (Dev, Test and Production)
+will be the responsibility of the IBM Managed Services Team pursuant to
+SOW # 1522119.
+ii. Contractor will prime the MAS HPU environment with the assets starting
+with an identified data center enabling scale out to other data centers.
+iii. Contractor will customize and configure the MAS HPU offering to validate
+the upgrade to MAS Manage (Functional testing of CI functions, mobility,
+security)
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 9
+iv. Contractor will work with Google to define, implement, test and validate
+the interfaces to external systems.
+v. Contractor will define data and storage governance in terms of backup,
+restore and archival based on volumetrics. The Maximo Application Suite
+supports three database platforms: SQL Server, Oracle and IBM DB2.
+b. Activity 1 - Project Management. Contractor will provide project management
+Services for the Contractor responsibilities in this SOW (Section 5.1.a).
+Contractor will provide technical direction and control of Personnel providing
+Services under this SOW and to provide a framework for project planning,
+communications, reporting, procedural and contractual activity. This activity is
+composed of the following tasks Contractor will perform:
+i. Planning Contractor will provide the following planning Services:
+A. Review the SOW and the contractual responsibilities of both parties
+with Google Project Manager.
+B. Maintain project communications through Google Project Manager.
+C. Coordinate the establishment of the project environment.
+D. Establish documentation and procedural standards for Deliverables
+provided under this SOW.
+E. Assist Google Project Manager to prepare and maintain the project
+plan for the performance of this SOW which will include the activities,
+tasks, assignments, milestones and estimates.
+F. Review with Google the hardware required for the performance of this
+SOW.
+ii. Project Tracking and Reporting Contractor will provide the following
+project tracking and reporting Services:
+A. Review project tasks, schedules, and resources and make changes or
+additions, as appropriate.
+B. Measure and evaluate progress against the project plan with Google
+Project Manager.
+C. Review the Contractor standard invoice format and billing procedure
+to be used on the project, with Google Project Manager.
+D. Work with Google Project Manager to address and resolve deviations
+from the project plan.
+E. Conduct regularly scheduled project status meetings.
+F. Report time spent on the project to Google Project Manage.
+G. Administer the Project Change Control Procedure with Google Project
+Manager.
+H. coordinate and manage the technical activities of Contractor project
+Personnel.
+iii. Activity 1 Completion Criteria. The Services under Activity 1 are ongoing
+activities and will be considered complete at the end of the SOW Term.
+iv. Activity 1 Deliverables. Contractor will provide Google weekly status
+reports summarizing the Activity 1 Services.
+c. Activity 2 - Design Workshops with Google Team. Under this activity, Contractor
+will perform Services which include the following tasks:
+i. Contractor will plan, conduct and attend Discovery and Data Integration
+Workshops with Google team. The output of these workshops will be the
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 10
+required understanding of data sources, structure, and architecture for
+integration and constructing predictive models.
+ii. Based on the current asset class selection (generators and switchgear),
+Contractor will have focused workshops for each asset class and
+establish the data readiness of the equipment.
+iii. Contractor will gather and document detailed requirements for
+persona/user groups, role, dashboard and prediction KPIs.
+iv. Contractor will share with Google integration methodology for pilot phase
+with external systems.
+v. Contractor will determine quality and types of data, identify any gaps and
+proceed with available data. Google to share the asset work order data
+(historical data) – condition based, parametric, failure, maintenance and
+production planning.
+vi. Activity 2 Completion Criteria. The Services under Activity 2 will be
+considered complete when the above tasks are completed.
+vii. Activity 2 Deliverables. None
+d. Activity 3 - Environment Provisioning. Under this activity, Contractor will
+perform the following tasks.
+i. provision the MAS 8.7 HPU in the IBM Cloud. The provisioning,
+installation and management of the environments will be performed by
+the IBM Managed Services team pursuant to SOW # 1522119.
+ii. Provide specifications for safelisting certain ports for exchanging data
+based on file transfer agreed to as part of the solution arch.
+iii. Validate the functional working of the installed environments once
+completed by the IBM Managed Services team.
+iv. Note : There will be 3 environments provisioned in the IBM cloud dev/test,
+staging, production.
+v. Activity 3 Completion Criteria. The Services under Activity 3 will be
+considered complete when the MAS environment(s) are provisioned on
+the IBM Cloud with appropriate access to Google development as well as
+end users. Activity 3 Deliverable Materials: None
+e. Activity 4 - Establish Data Integration Approach. Under this activity, Contractor
+will perform the following Services:
+i. Contractor will provide Google a detailed specification for the data
+ingestion formats into the MAS platform.
+ii. Contractor will work with Google to arrive at the design and approach for
+the data transformation and ingestion into MAS. Google will be
+responsible for providing Contractor the data required in a format that
+can be ingested by the IBM MAS platform.
+iii. Contractor will design the approach for the automated creation of work
+orders from MAS to Google’s existing EAM system.
+iv. Activity 4 Completion Criteria: The Services under Activity 4 will be
+considered complete, when the above tasks are complete.
+v. Activity 4 Deliverables: Contractor will provide Google a detailed data
+specification document and design document for the integration of data
+into MAS Platform. The detailed specification document will contain a
+listing of the functional requirements, use case descriptions and the nonfunctional requirements (such as the number of concurrent users, data
+volumes, and SLAs for the model scoring etc.). The design document will
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 11
+contain the high level solution architecture, data model specification,
+architecture decisions, design decisions, API specifications.
+f. Activity 5 - Asset Class 1 Development (Generators). For Asset Class 1
+(Generators), Contractor will perform the following Services:
+i. Contractor will conduct data analysis for the equipment to develop a
+Health Index score based on criticality of the equipment, aging, and
+probability of failure with appropriate risk.
+ii. Contractor will ingest data for generators for the designated site into the
+MAS platform.
+iii. Contractor will conduct iterative feature engineering with machine
+learning based model development for prediction of equipment failures.
+iv. Contractor will model validation using test data.
+v. Contractor will model validation results using blind test data.
+vi. Contractor will review results of the models with Google SMEs.
+vii. Contractor will determine Go/NoGo decision from Google, based on
+model validation results.
+viii. Contractor will finalize the models that can be deployed to production
+environment
+ix. Activity 5 Completion Criteria: The Services under Activity 5 will be
+considered complete when the above tasks are completed.
+x. Activity 5 Deliverables: Contractor will provide Google an Asset Class 1
+Model Validation Report. Model Validation Report will include the
+following:
+1. Goal of the modeling exercise (failure prediction, anomaly
+detection, heath scoring)
+2. Data sets used
+3. Data quality summary
+4. Modeling techniques used
+5. Model results for each iteration
+6. Model deployment considerations
+7. Data required for the model scoring pipeline
+8. Decisions / assumptions captured during validation sessions
+g. Activity 6 - Asset Class 2 Development (Switchgear). For Asset Class 2
+(Switchgear), Contractor will perform the following Services:
+i. Contractor will conduct data analysis for the equipment to develop a
+Health Index score based on criticality of the equipment, aging and
+probability of failure with appropriate risk.
+ii. Contractor will ingest data for Switch Gears for the designated site into
+the MAS platform.
+iii. Contractor will conduct iterative feature engineering with machine
+learning based model development for predict of failures.
+iv. Contractor will model validation using test data.
+v. Contractor will model validation results using blind test data.
+vi. Contractor will review results of the models with Google SMEs.
+vii. Contractor will determine Go/NoGo decision, based on model validation
+results.
+viii. Contractor will finalize the models that can be deployed to production
+environment.
+ix. Contractor will enable the MAS dashboards for MAS Health and Predict
+using the data available. 
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 12
+x. Contractor will conduct end to end testing of deployment and
+dashboard(s).
+xi. Activity 6 Completion Criteria: The Services under Activity 6 will be
+considered complete when the above tasks are completed.
+xii. Activity 6 Deliverables: Contractor will provide Google an Asset Class 2
+Model Validation Report. Model Validation Report will include the
+following:
+1. Goal of the modeling exercise (failure prediction, anomaly
+detection, heath scoring)
+2. Data sets used
+3. Data quality summary
+4. Modeling techniques used
+5. Model results for each iteration
+6. Model deployment considerations
+7. Data required for the model scoring pipeline
+8. Decisions / assumptions captured during validation sessions
+h. Activity 7 - Deployment of Asset Class 1 (Generators) to Production
+Environment. Under this activity, Contractor will perform the following Services:
+i. Contractor will deploy the validated models for Generator Asset Class to
+the production environment.
+ii. Contractor will ingest the relevant data sets for the production
+environment.
+iii. Contractor will conduct execution of end to end flow for data ingestion,
+model scoring, and dashboard testing in the Production Environment
+iv. Activity 7 Completion Criteria: The Services under Activity 7 will be
+considered complete when the above tasks are completed.
+v. Activity 7 Deliverables: None
+i. Activity 8 - Deployment of Asset Class 2 (Switchgear) to Production
+Environment. Note: Google will perform the tasks under this Activity 8 and are
+listed here for information purposes only. Under this activity, Google will perform
+the following tasks:
+i. Google will deploy the validated models for Switchgear Asset Class to the
+Production environment.
+ii. Google will ingest the relevant data sets for the Production environment
+iii. Google will conduct execution end to end flow for data ingestion, model
+scoring, and dashboard testing in the Production Environment.
+iv. Activity 8 Completion Criteria: The Services under Activity 7 will be
+considered complete when the above tasks are completed.
+v. Activity 8 Deliverables: None
+j. Activity 9 - UAT for Asset Class 1 (Generators). Under this activity, Contractor
+will perform the following Services which include the following tasks for the
+Generator asset class (Asset Class 1):
+i. Contractor will provide support, as Google leads UAT on entire solution:
+Data onboarding, Model prediction and dashboard.
+ii. Activity 9 Completion Criteria: The Services under Activity 9 will be
+considered complete when the above tasks are completed.
+iii. Activity 9 Deliverables: None
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 13
+k. Activity 10 - Production Readiness for Asset Class 1 (Generator). Under this
+activity, Contractor will perform the following Services which include the
+following tasks for Asset Class 1:
+i. Contractor will provide support, as Google leads planned Go-Live
+Readiness tasks in the Production Environment
+ii. Contractor will assist Google as Google completes the MAS solution GoLive checklist.
+iii. Activity 10 Completion Criteria: The Services under Activity 10 will be
+considered complete when the above tasks are completed.
+iv. Activity 10 Deliverables: Contractor will provide Google a MAS SolutionRelated Go-Live Checklist
+l. Activity 11 - Information Transfer. Under this activity, Contractor will perform the
+following Services:
+i. Contractor will conduct information transfer sessions for the MAS
+components that were used for the solution. These sessions would be
+limited to the Google business user persona/user groups, data scientist
+and admin users.
+ii. Activity 11 Completion Criteria: The Services under Activity 11 will be
+considered complete when the information transfer sessions have been
+provided to Google.
+iii. Activity 11 Deliverables: Contractor will provide Google all information
+transfer materials. These materials will include the following:
+1. Ingestion of data into MAS
+2. Overview of the models
+3. Configuration of the model scoring pipelines
+4. MAS administrative tasks
+4.2 Services Location. Contractor will provide the Services from the following
+location(s) (and any other locations that Google approves in writing) (check all that apply):
+X Contractor's own facilities in: Varying locations across US and India
+☐ Google-operated, vendor-occupied (GOVO) facilities in:
+X Services will be provided through video conferencing.
+5. Payment.
+5.1 Fees and Invoicing. After Google accepts the applicable Services and
+Deliverables, Contractor will invoice Google for completing the following milestones or
+Deliverables:
+Milestone or Deliverable Due Date Amount Invoiceable
+on Acceptance [USD]
+Weekly Status Reports Ongoing Total Billable Hours
+accrued during the
+applicable month.
+Requirements Document End of Activity 2
+(est. 4 weeks
+after SOW
+Effective Date)
+Total Billable Hours
+accrued during the
+applicable month.
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 14
+Detailed Data Specification Document End of Activity 4
+(est. 4 weeks
+after SOW
+Effective Date)
+Total Billable Hours
+accrued during the
+applicable month.
+Design Document for the Integration of Data
+into MAS Platform
+End of Activity 4
+(est. 4 weeks
+after SOW
+Effective Date)
+Total Billable Hours
+accrued during the
+applicable month.
+Asset Class 1 Model Validation Report End of Activity 5
+(est. 12 weeks
+after SOW
+Effective Date)
+Total Billable Hours
+accrued during the
+applicable month.
+Asset Class 2 Model Validation Report End of Activity 6
+(est. 12 weeks
+after SOW
+Effective Date)
+Total Billable Hours
+accrued during the
+applicable month.
+MAS Solution-Related Go-Live Checklist – to
+be done by Google
+Activity 10 (est.
+15 weeks after
+SOW Effective
+Date)
+Total Billable Hours
+accrued during the
+applicable month.
+Information Transfer Material Activity 11 (est.
+18 weeks after
+SOW Effective
+Date)
+Total Billable Hours
+accrued during the
+applicable month.
+After Google accepts the applicable Services and Deliverables, Contractor will invoice
+Google monthly for Billable Hours, at $177.00 per hour, up to a maximum 1,680 hours
+(maximum Services charges of $297,360.00) during the SOW Term.
+“Billable Hours” means the person-hours during which Contractor Personnel perform
+Services.
+Contractor represents and warrants that: 1) it will pay its Personnel in accordance with
+all applicable legal and regulatory requirements; and 2) Contractor will keep complete
+and accurate time keeping records of Contractor Personnel’s work necessary to
+support the charges under this SOW.
+5.2 Expenses. Check only one:
+X Google will reimburse Contractor’s pre-approved, out-of-pocket expenses as follows,
+subject to MSA Section 3.2 (Expenses):
+Expense Type Not to Exceed [USD]
+Travel-related (including transportation,
+lodging, and meals)
+10% of the Maximum
+Total Cost
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 15
+5.3 Maximum Total Cost. The total invoiced amount for the services and deliverables,
+excluding expenses, under this SOW will not exceed the following cap: $297,360.00 USD. This
+cap (check only one):
+! includes Taxes.
+X excludes Taxes.
+6. Google Responsibilities
+6.1 Google Project Manager
+Prior to the start of this project, Google will designate a person called Google Project
+Manager who will be the focal point for Contractor communications relative to this
+project.
+Google Project Manager's responsibilities include the following:
+a. Manage Google responsibilities for this project;
+b. Serve as the interface between Contractor and all Google departments
+participating in the project;
+c. Administer any Change control procedure with the Contractor Project Manager
+in accordance with the MSA, Section 2.4.
+d. Participate in project status meetings.
+e. Obtain and provide requested information, data, and decisions to Contractor
+within a reasonable timeframe;
+f. Resolve deviations from the estimated schedule, if caused by Google;
+g. Help resolve project issues and escalate issues within Google organization.
+h. Review with the Contractor Project Manager any of Google invoice or billing
+requirements. Such requirements that deviate from the Contractor’s standard
+invoice format or billing procedures may have an effect on price, and will be
+managed through the Change Control Procedure in Section 2.4 of the MSA.
+6.2 Google Other Responsibilities
+a. Provide a license for the IBM software to be installed and configured and must
+have a valid IBM Software Maintenance agreement (Passport Advantage,
+Subscription & Support, Support Line, SoftwareXcel or Program Services
+whichever applicable) as pre-requisite. The IBM Software to be supported has
+not yet reached their end-of-Support dates.
+b. Export the asset hierarchy from MAXIMO in a .csv file for priming the MAS
+HPU instances.
+c. If needed, provide support and development for non-IBM software.
+d. Ensure that all software media required to perform the installation are
+available and ready to use
+e. Ensure that all ports and other firewall configuration are set according to
+Contractor requirements.
+f. Allow access to all involved systems to the Contractor consultant via VPN or a
+remote screen sharing application such as WebEx or Google Meet.
+g. Ensure that the required IBM Cloud environments are provisioned prior to
+project start.
+CONFIDENTIAL ~ DMS Template ID: 4355286 (v4) ~ pg. 16
+7. Special Terms. The following special terms apply to this SOW: N/A
+If you are signing on behalf of your company, you represent and warrant that you:
+(1) have full legal authority to bind your company to these terms and conditions;
+(2) have read and understood the MSA and this SOW; and
+(3) agree to this SOW on behalf of your company.
+If you do not have the legal authority to bind your company, do not sign this SOW.
+Signed by the parties’ authorized representatives on the dates below.
+GOOGLE CONTRACTOR
+By: {{google_1_signature}}
+Name: {{google_1_fullname}}
+Title: {{google_1_title}}
+Date: {{google_1_date}}
+By: {{partner_1_signature}}
+Name: {{partner_1_fullname}}
+Title: {{partner_1_title}}
+Date: {{partner_1_date}}
