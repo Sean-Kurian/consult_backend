@@ -25,7 +25,6 @@ import { TextLoader } from "langchain/document_loaders/fs/text";
 //milvus vectordb
 
 const token = process.env.ZILLIZ_TOKEN;
-
 const uri = process.env.ZILLIZ_URI;
 
 // create milvus vector db client
@@ -44,7 +43,11 @@ function sleep(time) {
 //TODO: CURRENTLY just loading files in from local directory
 //should have a seperate file to load in files
 const currentDir = path.dirname(new URL(import.meta.url).pathname);
-const loadThisDir = path.resolve(currentDir, "examples");
+var loadThisDir = path.resolve(currentDir, "examples");
+
+if (loadThisDir.includes("C:\\C:\\")) {
+  loadThisDir = loadThisDir.replace("C:\\", "");
+}
 
 console.log(loadThisDir);
 // const milvusClient = new Milvus();
