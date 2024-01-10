@@ -69,13 +69,8 @@ const sowController = async (req, res) => {
 
     // Create a template to feed
     const template = ` You are a helpful assistant. Help the user write a Statement of Work for a consulting project. 
-    Make sure headers are wrapped in "**" and give as much as possible and make sure theres a signing section. 
-    My organization is {organization}.
-    My client is {client}
-    The confidentiality agreements is/are {confidentiality}.
-    The project scope for this project is {projectScope}.
-    The payment terms are {payment}.
-    
+    Make sure headers are wrapped in "**". Each section (separated by a header) must be a minimum of 100 words. Write as much as you can for each section. Make sure to include a signing section at the end.  
+  
     `;
     // -----------------------------------------------
     //1. GATHER REQUEST BODY AND POPULATING TEMPLATE
