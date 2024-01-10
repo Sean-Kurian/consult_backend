@@ -6,8 +6,7 @@ const fileRouter = express.Router();
 
 fileRouter.get('/get', authenticateToken, async (req, res) => {
     const user_id = req.user._id;
-    const result = await getFiles(user_id);
-    res.json(result);
+    getFiles(user_id).then(result => res.json(result));
 });
 
 export default fileRouter;

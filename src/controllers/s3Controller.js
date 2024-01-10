@@ -15,7 +15,7 @@ const uploadWithMulter = () => multer({
             cb(null, {fieldname: file.fieldname})
         },
         key: function(req, file, cb) {
-            cb(null, 'pdfs/' + req.user._id.toString() + '/' + Date.now() + '-' + file.originalname)
+            cb(null, req.user._id.toString() + '/' + Date.now() + '-' + file.originalname)
         }
     })
 }).single("s3Pdf")
@@ -28,10 +28,8 @@ export const uploadToAws = (req, res) => {
             console.log(err);
             res.json({err, msg: 'Error occurred while uploading'})
         } else {
-            const key = req.file.key;
-            const url = "s3://" + BUCKET_NAME + "/" + key;
-            saveFile(req.user._id.toString(), url);
-            res.json({msg: 'Files uploaded successfully', files: req.files})
+            saveFile(req.user._id.toString(), req.file.key);
+            res.json({msg: 'Files uploaded successfully', files: req.file})
         }
     })
 }

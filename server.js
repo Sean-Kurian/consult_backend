@@ -29,7 +29,7 @@ connection.once("open", () => {
 });
 
 app.use(sowRouter);
-app.use("/pdf", s3Router);
+app.use("/s3", s3Router);
 app.use("/auth", authRouter);
 app.use("/file", fileRouter);
 

@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/s3-request-presigner": "^3.485.0",
     "@langchain/openai": "^0.0.9",
     "@zilliz/milvus2-sdk-node": "^2.3.5",
     "aws-sdk": "^2.1531.0",

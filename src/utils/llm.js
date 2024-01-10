@@ -21,6 +21,8 @@ import {
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { DirectoryLoader } from "langchain/document_loaders/fs/directory";
 import { TextLoader } from "langchain/document_loaders/fs/text";
+import { config } from "dotenv";
+config();
 
 //milvus vectordb
 
@@ -51,6 +53,9 @@ if (loadThisDir.includes("C:\\C:\\")) {
 
 console.log(loadThisDir);
 // const milvusClient = new Milvus();
+if (loadThisDir.includes("C:\\C:\\")) {
+  loadThisDir = loadThisDir.replace("C:\\", "");
+}
 async function callModelforResult(filledTemplate) {
   // Create docs with a loader
   const loader = new DirectoryLoader(loadThisDir, {

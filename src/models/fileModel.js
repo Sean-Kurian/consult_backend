@@ -6,7 +6,7 @@ const fileSchema = new Schema({
         required: true,
         trim: true
     },
-    fileUrl: {
+    key: {
         type: String,
         required: true,
         unique: true,
