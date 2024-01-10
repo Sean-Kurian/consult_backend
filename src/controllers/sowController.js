@@ -1,10 +1,5 @@
 // sow.js
-import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { PromptTemplate } from "@langchain/core/prompts";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { BufferMemory } from "langchain/memory";
-import { LLMChain } from "langchain/chains";
 import callModelforResult from "../utils/llm.js";
 // import * as fs from "fs";
 import {
@@ -19,19 +14,7 @@ import {
   AlignmentType,
   PageNumber,
 } from "docx";
-import {
-  MilvusClient,
 
-  //   Milvus,
-} from "@zilliz/milvus2-sdk-node";
-
-import { Milvus } from "langchain/vectorstores/milvus";
-
-import { DirectoryLoader } from "langchain/document_loaders/fs/directory";
-import { TextLoader } from "langchain/document_loaders/fs/text";
-
-import PizZip from "pizzip";
-import Docxtemplater from "docxtemplater";
 import fs from "fs";
 import path from "path";
 

@@ -1,7 +1,7 @@
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { formatDocumentsAsString } from "langchain/util/document";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
-import { PromptTemplate, FewShotPromptTemplate } from "@langchain/core/prompts";
+import { PromptTemplate } from "@langchain/core/prompts";
 import { BufferMemory } from "langchain/memory";
 import path from "path";
 import { LLMChain } from "langchain/chains";
@@ -11,13 +11,8 @@ import {
 
   //   Milvus,
 } from "@zilliz/milvus2-sdk-node";
-import MilvusVectorStore from "@zilliz/milvus2-sdk-node";
+
 import { Milvus } from "langchain/vectorstores/milvus";
-import {
-  RunnableSequence,
-  RunnablePassthrough,
-} from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
 import { DirectoryLoader } from "langchain/document_loaders/fs/directory";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 import { config } from "dotenv";
