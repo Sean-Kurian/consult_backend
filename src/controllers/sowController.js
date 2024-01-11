@@ -24,6 +24,7 @@ import path from "path";
 const currentDir = path.dirname(new URL(import.meta.url).pathname);
 
 console.log(`currentDir: ${currentDir}`);
+console.log(`currentDir: ${currentDir}`);
 
 const sowController = async (req, res) => {
   try {
@@ -169,8 +170,10 @@ const sowController = async (req, res) => {
     // console.log(typeof sectionsForOutputDocx);
     Packer.toBuffer(doc).then((buffer) => {
       fs.writeFileSync("src/output.docx", buffer);
+      fs.writeFileSync("src/output.docx", buffer);
     });
-
+    //TODO optional: previously downloaded in consult_backend/output.docx , however path.join(dir, ".../output.docx") becomes string consult_backend/.../output.docx
+    //so output is moved to src/ since ../ dots 2x works
     const outputFilePath = path.join(currentDir, "../output.docx");
     console.log(outputFilePath);
 
