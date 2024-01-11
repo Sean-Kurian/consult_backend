@@ -1,0 +1,617 @@
+5
+PERFORMANCE WORK STATEMENT
+PERFORMANCE
+STATEMENT
+USING DISTRIBUTED LEDGER TECHNOLOGY TO
+USING DISTRIBUTED LEDGER TECHNOLOGY TO
+TRACK AND MANAGE DIGITAL AND PHYSICAL ASSETS
+U.S. TREASURY, BUREAU OF THE FISCAL SERVICE
+BPA CALL 2033H618F00212 / TFSAFSABPA17008
+TFSAFSABPA17008
+TRACK AND MANAGE DIGITAL AND PHYSICAL ASSETS
+U.S. TREASURY, BUREAU OF THE FISCAL SERVICE
+BPA CALL 2033H618F00212
+1.0 OVERVIEW& BACKGROUND
+1.0 OVERVIEW
+BACKGROUND
+The Bureau of the Fiscal Service (Fiscal Service), Office of Financial Innovation and Transformation (FIT),
+identifies and facilitates the implementation of innovative solutions that improve the way the Fiscal
+Service and other Federal agencies manage the Federal government’s finances.
+The Bureau
+Fiscal Service (Fiscal Service), Office
+Financial Innovation and Transformation (FIT),
+identifies and facilitates the implementation
+innovative solutions that improve the way the Fiscal
+Service and other Federal agencies manage the Federal government’s finances.
+In early 2018, FIT completed a proof of concept using distributed ledger technology to track and manage
+physical assets such as cell phones and laptops—a solution that if implemented across the Fiscal Service
+and across the government could create efficiencies.
+In early 2018, FIT completed a proof
+concept using distributed ledger technology to track and manage
+physical assets such as cell phones and laptops—a solution that if implemented across the Fiscal Service
+across the government could create efficiencies.
+The Federal government experiences a similar issue in managing digital assets such as software
+licenses. The Government Accountability Office (GAO) released a report in 2014 stating the vast majority
+of agencies do not have adequate policies [or practices] for managing software licenses.1 GAO went on to
+deliver 136 recommendations to agencies in the report suggesting agencies do things such as, “establish
+a comprehensive inventory of software licenses using automated tools…” and “analyze agency-wide
+software license data, such as costs, benefits, usage, and trending data, to identify opportunities to
+reduce costs and better inform investment decision making.” Four years after the release of the GAO
+report, many Federal agencies continue to struggle with maintaining an accurate inventory of software
+licenses and the amount of money being spent to support the licensing fees that may not even be
+needed. Inaccurate inventories cause agencies to overspend on new or existing licenses and software
+that is that is not being used.
+The Federal government experiences a similar issue in managing digital assets such as software
+licenses. The Government Accountability Office (GAO) released a report in 2014 stating the vast majority
+agencies
+not have adequate policies [or practices] for managing software licenses.1 GAO went on to
+deliver 136 recommendations to agencies in
+report suggesting agencies do things such as, “establish
+a comprehensive inventory
+software license data, such
+software licenses using automated tools...” and “analyze agency-wide
+costs, benefits, usage, and trending data, to identify opportunities to
+reduce costs and better inform investment decision making.”
+Four years after the release of the GAO
+report, many Federal agencies continue to struggle with maintaining an accurate inventory
+software
+licenses
+needed.
+amount of money being spent to support the licensing fees that may
+Inaccurate inventories cause agencies to overspend
+being used.
+Now that we have built a foundational understanding for how DLT technically works through developing a
+working prototype2 for physical assets, the logical next steps for testing the technology in the Federal
+government is to: 1) Gain a deeper understanding of the costs, benefits, risks and challenges associated
+with using a DLT solution in a real, Federal technical environment by carrying out a pilot project within the
+Fiscal Service, and 2) Explore, through a proof of concept, reusing FIT’s physical asset management
+working prototype for a similar use case to track and manage digital assets (i.e., software licenses) on a
+distributed ledger network that spans several Federal agencies.
+working prototype? for physical assets, the logical next steps for testing
+technology in
+Federal
+government is
+Gain a deeper understanding
+the costs, benefits, risks and challenges associated
+with using a DLT solution in a real, Federal technical environment by carrying
+Fiscal Service, and
+Explore, through a proof
+a pilot project within the
+concept, reusing FIT’s physical asset management
+working prototype for a similar use case to track and manage digital assets (i.e., software licenses)
+distributed ledger network that spans several Federal agencies.
+2.0 Objective/Scope of Work
+Objective/Scope of Work
+The purpose of this performance work statement (PWS) is to outline FIT’s requirements for conducting
+The purpose of this performance work statement (PWS) is to outline FIT’s requirements for conducting a
+pilot within the Fiscal Service to test the DLT solution in a Federal environment and for conducting a proof
+of concept using DLT to track and manage digital assets.
+pilot within the Fiscal Service to test the DLT solution in a Federal environment and for conducting a proof
+concept using DLT to track and manage digital assets.
+Now that we have built a foundational understanding for how DLT technically works through developing
+even be
+new
+existing licenses and software
+“Lu :4-413 Federal Software Licenses: Better Management Needed to Achieve Significant Savings Government-
+‘wide
+U5... t=. “-rward, “working prototype” refers to three separate products: Mobile app (for users to transfer
+---4'----,) --aw their assigned asset inventory; Web app (for management viewing real-time inventory statistics
+anu waroacuon histories; and blockchain (for recording the entire transactional history and for deploying smart
+1 GAO-14-413 Federal Software Licenses: Better Management Needed to Achieve Significant Savings Government-
+Wide
+2 From here forward, “working prototype” refers to three separate products: Mobile app (for users to transfer
+assets and view their assigned asset inventory; Web app (for management viewing real-time inventory statistics
+and transaction histories; and blockchain (for recording the entire transactional history and for deploying smart
+contracts).
+
+6
+Objective 1- Conduct a pilot3 project using FIT’s DLT solution to actively track, transfer, and manage
+physical assets (i.e., Fiscal Service cell phones). The pilot is an extension of the proof of concept FIT
+completed in early 2018 and is being conducted to gain a better understanding of 1) the DLT solution
+technology stack and how it would interact with Treasury systems, most notably, Fiscal Service’s asset
+management system; 2) the extent to which a DLT solution can improve the effectiveness, efficiency, and
+internal controls (e.g., reliable reporting and compliance with applicable laws, regulations and Department
+policies) related to managing and tracking physical assets. Additionally, the pilot is being conducted with
+a specific focus on identifying, understanding, and documenting challenges that may be unique to moving
+a DLT solution into production (IT governance, security, integration with existing systems, etc.).
+In order to carry out a pilot project in Fiscal Service’s technical environment, a proposal outlining the
+project is required to advance through Fiscal Service’s governance process for approval (Investment
+Review Board (IRB) and Technical Architecture Review Board (TARB)) as well as detailed security
+assessments that are necessary for moving software into a piloting environment. As part of this work, the
+Contractor shall support FIT in navigating the governance process by completing the required artifacts
+necessary to move our working prototype into Fiscal Service’s technical environment for conducting pilot
+projects (e.g., governance documents, DLT solution technical diagrams, presentations, briefings).
+In the event that the DLT working prototype is approved and is allowed to operate within a Fiscal Service
+technical environment appropriate for conducting pilot testing, the Contractor will support FIT with
+carrying out pilot testing assessing the degree to which the working prototype impacts the effectiveness,
+efficiency and internal controls for managing and tracking physical assets.
+Specific Government personnel participation will be provided (e.g., access to IT personnel) to support the
+pilot project and will be available for scheduled meetings and work sessions as needed. The DLT
+solution that was developed during the proof of concept shall be used to conduct this pilot within the
+Fiscal Service. A small sub-set of Fiscal Service employees will participate in the testing phase (Option 2
+of the contract) and shall consist of non-bargaining unit employees only.
+Objective 2- Conduct a proof of concept4 to assess how, by expanding upon and reusing the physical
+asset management working prototype (developed under a previous contract), distributed ledger
+technology could be used: 1) as a digital asset registry and inventory system; 2) for real-time awareness
+of asset ownership, 3) for the seamless transfer of assets to another party (within the confines of the
+current Federal software licensing agreements), and 4) for tracking the utilization of the assets in order to
+optimize usage of the software licenses. The proof of concept shall determine the costs and benefits of
+using DLT for tracking, managing, and transferring digital assets. Additionally, this proof of concept shall
+provide an understanding for how a DLT solution could be architected to serve multiple agencies (i.e.,
+more than one agency use the application). The proof of concept is not a pilot and will not result in a
+production-ready deployable system, meaning the DLT solution will not be integrated with any Federal
+system(s) nor will there be any transfer of Federal data during the period of performance of the award.
+The proof of concept shall assess the effectiveness of using DLT as a solution to register, track, and
+manage digital assets by using contractor-issued equipment and software licenses.
+3 Fiscal Service defines a pilot as “a short-term, small-scale experimental trial of an IT capability in a production
+environment for evaluation and testing purposes prior to making the decision to implement on a larger scale.”
+4 Fiscal Service defines Proof of Concept as an effort for “determining the viability of an IT product or service to
+solve a business problem. IT proof of concepts are installed in a non-production environment.”
+
+7
+To gain a better understanding for how a decentralized application could serve multiple agencies, an
+advisory board, made up of cabinet level agencies, will provide subject matter expertise and guidance
+throughout the development and testing of the working prototype. Government personnel participation
+will be provided to support the development of the working prototype and the designated personnel (e.g.,
+business and technical, information technology, and Government User Experience subject matter
+experts) will be available for scheduled meetings and work sessions.
+3.0 Tasks & Deliverables
+STAGE 1- PROJECT MANAGEMENT
+Primary Task 1—The Contractor shall coordinate weekly with the assigned Fiscal Service Contracting
+Officer Representative (COR) to meet with the Government project team and provide weekly status
+reports and an updated project work plan (i.e., updated project plan tracking completion of tasks). The
+project plan shall be used as the method for scheduling activities and deliverables. Additionally, the
+Contractor shall engage in progress/findings discussions with FIT and agency stakeholders detailing the
+progress of the proof of concept which could include lessons learned, issues, concerns, etc. discovered
+throughout the period of performance.
+Primary Deliverable 1—Project Management
+Within one week of contract award, the Contractor shall provide a project plan with a description of the
+proof of concept approach, deliverable/task schedule, and contractor resources allocated to each task.
+The project plan shall be delivered to FIT using Microsoft Project version 10 or higher. The project plan
+shall be updated on a weekly basis and shall be presented to the Government project team via a weekly
+status report meeting throughout the period of performance. Additionally, the Contractor shall be in
+attendance for all meetings, conferences, presentations, etc. at the direction of the COR. Meetings,
+conferences, presentations, etc. will be held in person, by conference call, or by web conference. The
+venue will be specified by the COR as meetings are scheduled.
+STAGE 2- PILOT PHYSICAL ASSET DLT WORKING PROTOTYPE WITHIN FISCAL SERVICE
+Primary Task 1—Technical Environment Set-up Support
+The Contractor shall provide business knowledge and technical support to FIT as they partner with Fiscal
+Service IT to set up a technical environment to test a DLT solution. The technical environment that is to
+be established for the pilot will be in a test region, not a production region. The DLT solution (working
+prototype) that is to be analyzed was previously developed through another task order. The Contractor
+shall work with the Government to understand if the previously developed solution (see Attachment B
+Technical Architecture Slides) is usable, or compatible, with the current Fiscal Service technical
+environment and IT policies. If it’s not compatible, the Contractor shall document where the solution is
+incompatible with Fiscal Service’s technical environment and provide alternative solutions in order to carry
+out the pilot project. As part of setting up a technical environment within the Fiscal Service, decisions will
+go through a governance process and a security review. The Contractor shall provide the Government
+with technical support which could include creating diagrams and presentations that will be used as
+conversational or decisional documents throughout the governance process and security review. The
+diagrams and presentations will include things such as the description of the technical environment, data
+elements that will be used, how data exchanges will occur within the blockchain solution, how the
+blockchain will interact and exchange data with legacy Fiscal Service systems and databases, etc.
+Primary Deliverable 1—Briefing Materials and Supporting Documents
+
+8
+As part of this task, FIT is required to provide briefings to IT, the IRB, and the TARB in order to obtain
+approvals for moving forward through the pilot project. The Contractor shall provide the appropriate
+supporting materials (diagrams, presentations, business case templates (Attachment C DLT Business
+Case Templates), questionnaires, security information, etc.) to support the decisional briefings as well as
+any working meetings with FIT and IT. The Contractor shall be present at the decisional briefings and
+working meetings as directed by the COR.
+Primary Task 2—Execute Testing Phase and Perform Analysis (Optional Task)
+Once a technical environment has been established and the DLT working prototype is operational within
+a pilot environment, the Contractor shall initiate a testing phase, consisting of test scripts and scenarios
+developed by the Contractor, lasting no more than 2 months using the DLT solution to register, track, and
+manage cell phone inventory at the Fiscal Service. The testing phase includes working with Fiscal
+Service IT to load software onto a small number of Fiscal Service cell phones (no more than 30). If the
+cell phones are in an “active” state, they must be registered to a non-bargaining unit employee (i.e., not
+affected by Union policies). As part of primary task 1, the Contractor shall develop testing scenarios and
+performance metrics in order to communicate the results of the pilot. If previously developed process
+maps, technical architecture diagrams or data exchange diagrams are affected as a result of the testing
+phase, they shall be updated. The Contractor should have an understanding of the current HP Asset
+Management System in place at the Fiscal Service and associated costs in order to compare the current
+system with the DLT solution and subsequent pilot results.
+Primary Deliverable 1- Pilot Results and Findings
+Primary deliverable 1 shall be a pilot results and findings briefing, including supporting documentation,
+which shall include the following:
+• Description of the pilot objectives and the degree to which the objectives of the pilot were
+achieved and carried out
+• Description of the test case(s), test scenarios executed throughout the pilot, and the results of the
+test scenarios
+• Updated process maps or technical architecture diagram(s) (developed during Stage 2 of the
+award) as needed
+• Description of the metrics used to evaluate the performance of the DLT solution and the
+performance metric results achieved
+• Lessons Learned
+Primary Deliverable 2- Business Case
+The Contractor shall deliver a business case detailing the cost benefit analysis (DME and/or O&M costs
+associated with the DLT solution if implemented at the Fiscal Service), associated benefits both internal
+and external to the Fiscal Service, high-level risks, productivity and revenue enhancements, and a brief
+comparison to other solution alternatives (i.e., current physical asset management system in place at the
+Fiscal Service).
+Primary Deliverable 3- Implementation Roadmap
+At the conclusion of the pilot, the Contractor shall provide a roadmap detailing the recommended next
+steps to take (e.g., policies and procedures, bargaining unit considerations, additional technology
+considerations that may be needed) if the Fiscal Service decides to fully implement the DLT solution. The
+roadmap shall include a high-level timeline and milestones.
+
+9
+STAGE 3- PROOF OF CONCEPT USING DLT TO TRACK, MANAGE, & TRANSFER SOFTWARE
+LICENSES
+Primary Task 1—The purpose of this proof of concept is for the Contractor to provide the technical and
+business expertise to develop and demonstrate a working prototype of DLT that is used to create the
+initial inventory of software licenses being used in the Federal government. The Contractor shall
+demonstrate how digital assets can be tokenized and registered on a private DLT platform for the
+purposes of inventory, monitoring, and tracking. The Contractors shall develop the working prototype, to
+the extent feasible, by reusing the technical stack and DLT solution (i.e., mobile app, web app, and
+blockchain) created for the physical asset management DLT solution (see attachment B).
+The working prototype shall also include the capability to manage and transfer software licenses between
+parties without an intermediary. The transfer of licenses can be intra- or inter-agency transfers; however,
+the working prototype shall have the capability to partition off each agency’s software licenses on the
+distributed ledger. The culmination of Primary Task 1 also includes a final demonstration and results
+briefing of the working prototype as described below in Primary Deliverable 1.
+Subtask 1-Document and evaluate the current/as-is process and high-level costs for tracking and
+managing digital assets in addition to capturing stakeholder challenges and “friction” points.
+Subtask 2- Demonstrate how digital assets can be tokenized and registered on a private DLT
+platform for the purposes of inventory, monitoring, and tracking
+Subtask 3- Demonstrate how digital assets can be tracked and monitored, including license
+utilization, on a private DLT ecosystem that spans several Federal agencies in real-time
+Subtask 4- Demonstrate how, through the use of smart contracts, inventory efforts can be
+automated and license management can be optimized
+Subtask 5- Understand the degree to which a DLT solution could/could not streamline existing
+processes related to managing digital assets
+Subtask 6- Demonstrate how physical assets can be transferred between two parties (intra- or
+inter-agency transfers) within a private DLT ecosystem without the need for an intermediary to
+validate the transaction
+Subtask 7- Demonstrate how multiple agencies can “share” a DLT solution to track and manage
+digital assets without sharing each other’s data (i.e., demonstrate how information can be
+partitioned off on the blockchain and defined by user role)
+Subtask 8- Demonstrate how a DLT solution can provide real-time acknowledgement of digital
+asset transfers
+Subtask 9- Understand the degree to which policies, procedures, governance and oversight may
+need to change or evolve if the DLT solution were to be implemented
+Subtask 10- Understand the DLT solution architecture for DLT applications (such as this working
+prototype) that multiple agencies can use (e.g., node set-up and structure, governance)
+Primary Deliverable 1- The primary final deliverable shall be a demonstration of the working prototype
+showing the capabilities of the DLT solution compared to the current process and shall include a results
+briefing to the Government that includes the following:
+• Description of the proof of concept scope and objectives and the degree to which they were
+carried out and achieved including a description of the test scenarios exercised and test results
+• On-site demonstration of the working prototype proving the capabilities of the solution to track,
+manage, and transfer software licenses
+
+10
+• Current state and future state process maps
+• Analysis of the IT infrastructure if the proof of concept were to move to a pilot phase (e.g.,
+technical architecture diagram(s), IT roadmap for implementation, etc.)
+• Findings and conclusions (including a high-level comparative analysis for using a distributed
+approach (distributed ledger technology) vs. a centralized approach (central database), the
+rationale for choosing the DLT platform, protocol, wallet software, etc. used for the proof of
+concept)
+• Lessons Learned
+• Recommended next steps, including how this proof of concept could move into a pilot phase, how
+the Government should scale the application to include other Federal agencies, and a high-level
+roadmap if this proof of concept were to go into implementation
+• High-level cost comparison (i.e., major categories of cost) of the current state and future state if
+the DLT solution were deployed in a production environment
+Primary Deliverable 2-Communication Materials & Website Content
+The Contractor shall provide materials that enable FIT to share the working prototype (e.g., the mobile
+app, web app, and blockchain software code used for the digital asset proof of concept and physical
+asset proof of concept), proof of concept results, and education materials to the broader Federal
+community. The delivery of communication materials and website shall include the following:
+• A plan for sharing the DLT solution and code with other agencies via open-source sites (e.g.,
+Github) or via other public sharing mechanisms.
+• Written instructions to publish online explaining how to use the published code that will allow
+users with little to no blockchain experience to use the published code
+• No more than two animated or informational videos of the working prototypes (physical asset and
+digital asset solutions) that can be shared publicly on a website and used for educational
+purposes. Videos shall be no more than 2 minutes in length.
+• Informational “one-or-two pagers” formatted for web publication describing the proof of concept
+and learnings/findings obtained throughout the project
+The table below outlines the deliverables and delivery schedule for the Base Award and Optional Task 1:
+Contract
+Phase
+Deliverable
+Task Alignment
+Project Management Plan Stage 1
+Primary Task 1
+Primary Deliverable 1
+Pilot Briefing Materials &
+Supporting Documents
+Digital Asset DLT Working
+Prototype Results and Final
+Demonstration
+Stage 2
+Primary Task 1
+Primary Deliverable 1
+Stage 3
+Primary Task 1
+Primary Deliverable 1
+Schedule
+Within 1 week of
+contract kick-off and
+updated and submitted
+weekly
+Varies; deadlines will be
+established as needed
+throughout the first 8
+months of the contract
+8 months after contract
+kick-off
+Type
+Formal and
+continuously
+updated as
+required
+Formal
+Formal
+Base
+Award
+Base
+Award
+Base
+Award &
+Optional
+Task 1
+
+11
+Communication Materials &
+Website Content
+Physical Asset Pilot Results &
+Findings
+Physical Asset Pilot Business
+Case
+Physical Asset Pilot
+Implementation Roadmap
+Stage 3
+Primary Task 1
+Primary Deliverable 2
+Stage 2
+Primary Task 2
+Primary Deliverable 1
+Stage 2
+Primary Task 2
+Primary Deliverable 2
+Stage 2
+Primary Task 2
+Primary Deliverable 3
+Varies; deadlines will be
+established as needed
+throughout the first 8
+months of the contract
+At the conclusion of the
+period of performance
+for Optional Task 1
+At the conclusion of the
+period of performance
+for Optional Task 1
+At the conclusion of the
+period of performance
+for Optional Task 1
+Formal
+Formal
+Formal
+Formal
+4.0 PLACE OF PERFORMANCE
+All work performed under this PWS by the Contractor shall be performed at the Contractor’s facilities,
+unless otherwise directed by the COR. The Contractor shall be present at the Government’s site for
+meetings, conferences, presentations, etc., as directed by the COR. Work performed at the Government
+site shall be performed at the following Government facility:
+Bureau of the Fiscal Service
+401 14th Street SW
+Washington, DC 20027
+One trip to Parkersburg, WV, not to exceed 5 business days, may be needed during the period of
+performance and will be determined by the COR. Any and all travel will be paid at actuals according to
+per diem rates. If travel occurs, work performed at the Government site shall be performed at the
+following Government facility:
+Bureau of the Fiscal Service
+320 Avery Street
+Parkersburg, WV 26101
+5.0 PERIOD OF PERFORMANCE
+The period of performance for the Base Award is 06/18/2018 through 02/17/2019.
+The period of performance for the Optional Task, if exercised, will be determined based on receiving
+approval from the Fiscal Service Investment Review Board (IRB) and Technical Architecture Review
+Board (TARB) and the availability of the testing environment for the physical asset management DLT
+solution. If required, the optional task shall be exercised earlier than the completion of the Base Award.
+The ultimate period of performance for the Base Award and Optional task is 06/18/2018 through
+06/17/2019.
+Optional
+Task 1
+Optional
+Task 1
+Optional
+Task 1
+Base
+Award
+
+12
+6.0 ACQUISITION TYPE
+This is a Firm Fixed Price (FFP) award for the Base Award and Optional Task.
+7.0 KEY PERSONNEL CONTACT(S) & QUALIFICATIONS
+The Contractor shall provide qualified and skilled personnel to perform the services under this
+requirement. The Contractor shall submit resumes for proposed personnel. Resumes shall demonstrate
+the individuals’ qualifications and capabilities to perform the required tasks.
+Certain skilled experienced professional and/or technical personnel are essential for successful contractor
+accomplishment of the work to be performed. These are defined as “Key Personnel.” Key Personnel
+shall be fluent in the English language. Key Personnel shall be knowledgeable of DLT and shall be able
+to demonstrate experience using DLT, to include projects in similar size, scope (i.e., asset management,
+supply chain management), and complexity. Key Personnel shall have experience with developing or
+using an Ethereum DLT solution for tracking and managing physical assets. The proposed project
+manager shall possess the Project Management Professional (PMP) certification issued by the Project
+Management Institute.
+The Contractor identified all Key Personnel in BPA Call Volume 1 Technical Proposal, Section 2.0 Key
+Personnel Experience and Capabilities.
+8.0 KEY PERSONNEL REPLACEMENT PROCESS
+Key personnel may, with the consent or the contracting parties, be amended from time to time during the
+course of the contract to add or remove key personnel. A formal modification is only required when the
+key personnel are specifically named in the contract. This process only applies to the extent that the
+contract does not otherwise specify notice or personnel replacement obligations.
+Government Request
+The Government may require replacement of key personnel in the instance of non-performance,
+misconduct, or alleged misconduct whose continued use under a contract is contrary to the best interests
+of the Government. Circumstances that support a request for replacement include but are not limited to
+performance that is inconsistent with the contract performance work statement (PWS), terms and
+conditions, or violations of Federal laws, regulations, or agency conduct standards. The Contracting
+Officer’s Representative (COR) will give written notice to the Contractor of the need for substitution,
+including the circumstances surrounding the request for replacement. In accordance with FAR Part
+1.602-2(b), the Contracting Officer (CO) will ensure the Contractor receives impartial, fair, and equitable
+treatment; however, the CO is not required to investigate or validate allegations or wait until a final
+resolution of the circumstances surrounding the request for replacement before requiring substitution of
+key personnel.
+Within twenty four (24) hours of receiving notice, the Contractor shall respond to the Government’s
+request to replace key personnel and provide key personnel replacement resume(s) to the COR(s). The
+resume(s) shall demonstrate that the qualifications of proposed replacement key personnel meet the
+qualifications stated in the PWS. The COR will notify the Contractor, in writing, within forty-eight (48)
+hours of receiving key personnel replacement resume(s) if the Contractor provided replacement
+personnel is acceptable. The Government reserves the right to disapprove the proposed substitute(s) and
+negotiate with the Contractor for other key personnel replacement(s). Any Contractor replacement of key
+personnel must be done in consultation with the COR. The process for replacing key personnel as
+
+13
+described above does not suspend the Contractor’s obligation to continue performance under the
+contract.
+Contractor Request
+If the Contractor must substitute key personnel, the Contractor shall provide written notice to the COR
+and the CO two (2) calendar weeks before the proposed replacement date, whenever possible. At a
+minimum, the Contractor shall provide the Government with notice forty-eight (48) hours before
+replacement. The only exception to the forty-eight (48) hour notice is death, incapacitation, abrupt
+termination, or resignation from employment of key personnel where the Contractor’s notice was less
+than forty-eight (48) hours. If the deadline for providing notice falls on Friday after 5:00 pm, a weekend, or
+on a Federal Holiday, the Contractor shall provide notice the next business day if more than forty-eight
+(48) hours. The notice shall state the circumstances necessitating the proposed substitution of the key
+personnel and shall provide resume(s) of proposed replacement key personnel for review and
+consultation. The Contractor shall demonstrate that the qualifications of the proposed substitute(s) meet
+the qualifications stated in the PWS. The Government reserves the right to disapprove the proposed
+substitute(s) and negotiate with the Contractor for other key personnel replacement(s). Assignment of key
+personnel must be done in consultation with the COR.
+9.0 OTHER REQUIREMENTS
+Building Access and Suitability Clearance
+Upon award of the contract, and prior to the contractor or subcontractor personnel performing any
+services for the first time at Fiscal Service premises as listed in Section 4.0 – Place of Performance, the
+contractor shall present those personnel to the COR and follow the COR’s instructions regarding building
+access and security requirements. See Attachment A – Security Requirements for details.
+Compliance with Government Laws, Rules, and Regulations
+While the contractor’s personnel are at the Government facility, the contractor is responsible for
+compliance with all laws, rules, and regulations governing conduct with respect to health and safety – not
+only as they relate to its employees and agents, but also to other personnel who are government
+employees or agents of the government and to property at the site regardless of ownership. While on
+government premises and in possession of government property, the contractor is responsible for such
+property and any damages thereto.
+Confidentiality
+The contractor recognizes that, in performing under this order, the contractor may obtain access to
+nonpublic information that is confidential or proprietary in nature. Except as permitted by the order, the
+contractor agrees that it, its employees, its subcontractors, and its subcontract employees shall not
+disclose to any third party, or otherwise use, any information it obtains or prepares in the course of
+performance of this agreement for any purpose other than to perform work under the order without first
+receiving written permission from the contracting officer (CO). The contractor shall secure information
+received from or prepared or gathered for the Treasury Department under this order in a secure location
+with access limited to only those personnel with a “need to know.” If disclosure of information is required
+by law or legal process, the contractor shall contact the COR and the CO immediately to receive approval
+prior to release of any information. Notwithstanding any other language contained herein, the contractor
+shall comply with 31 CFR § 31.217 (Regarding 31 CFR §31.217, this is not a TARP covered project;
+however, FAS requires that nonpublic information be secured as stated in 31 CFR § 31.217. The only
+difference is that if information is inadvertently released, the contractor shall contact the COR and CO
+
+14
+listed in the order and not contact TARP personnel). The contractor personnel performing services under
+this order shall comply and complete the security requirements listed in Attachment A – Security
+Requirements at least two weeks before start date of the order performance or performing work under
+this order.
+Non-Personal Services Statement
+Contractor employees performing services shall be controlled, directed and supervised at all times by
+management personnel of the contractor. Contractor employees shall perform independent of and without
+the supervision of any Government official with the exception of when they are on–site at the
+government’s facility. Actions of contractor employees may not be interpreted or implemented in any
+manner that results in any contractor employee creating or modifying Federal policy, obligating the
+appropriated funds of the U.S. Government, overseeing the work of Federal employees, providing direct
+personal services to any Federal employee or otherwise violating the prohibitions set forth in Parts 7.5
+and 37.1 of the Federal Acquisition Regulation (FAR).
+Conduct
+The contractor, although in fact not a Government employee, shall comply with Executive Order 11222,
+May 8, 1965, "Prescribing Standards of Ethical Conduct for Government Officers and Employees," and
+shall also comply with Fiscal Service regulations implementing this Executive Order. Additionally, the
+contractor shall comply with all safety practices, vehicle registration, speed limits and any other Fiscal
+Service regulations and policy applicable to conduct standard. Contractor personnel driving a motor
+vehicle on Fiscal Service property cannot use a cell phone unless the vehicle is safely parked or the
+driver is using a hands-free device. Additionally:
+1. The contractor shall maintain satisfactory standards of the employee competency, conduct,
+appearance, and integrity.
+2. The contractor shall take appropriate disciplinary action against his/her employees when
+necessary.
+3. Each contractor employee is expected to adhere to standards of conduct that reflects credit on
+themselves, their employer and the Government.
+4. The Government reserves the right to direct the contractor to remove an employee from the work
+site for failure to comply with the standards of conduct.
+5. The contractor shall initiate immediate action within 48 hours to replace a removed employee to
+maintain continuity of services at no additional cost to the Government.
+10.0 CONTRACTING OFFICER AUTHORITY
+In no event shall any understanding or agreement between the contractor and any Government employee
+other than the CO on any order modifications, change orders, letter or verbal direction to the contractor
+be effective or binding upon the Government. All such actions shall be formalized by the proper
+contractual document executed by the appointed CO. The contractor is hereby put on notice that if a
+Government employee other than the CO directs a change in the work to be performed or increases the
+scope of work to be performed, it is the contractor’s responsibility to make inquiry of the CO before
+
+15
+making the deviation. Payments will not be made without being authorized by the appointed CO with the
+legal authority to bind the Government.
+11.0 FEDERAL HOLIDAYS
+Fiscal Service observes the Federal holidays that are listed below and on the Office of Personnel
+Management website at https://www.opm.gov/policy-data-oversight/pay-leave/pay-administration/fact-
+sheets/holidays-work-schedules-and-pay/. Except as specified by the CO, services shall not be required
+on the following Federal holidays:
+New Year’s Day, January 1
+Inauguration Day (Washington, DC only), January 20
+Martin Luther King’s birthday, third Monday in February
+President’s Day, last Monday in May
+Independence Day, July 4
+Labor Day, first Monday in September
+Columbus Day, second Monday in October
+Veterans’ Day, November 11
+Thanksgiving Day, fourth Thursday in November
+Christmas Day, December 25
+Holidays falling on Saturdays are observed on Friday proceeding the holiday, while those falling on
+Sundays are observed on the Monday following the holiday. Holidays shall also include any additional
+day(s) granted by executive order.
+12.0 QUALITY CONTROL PLAN
+The contractor shall establish a complete quality control plan, or QCP, for this contract. The QCP shall be
+maintained by the contractor to ensure that the requirements of the contract are met as specified in the
+Quality Assurance Surveillance Plan described below.
+13.0 QUALITY ASSURANCE SURVEILLANCE PLAN
+The purpose of the quality assurance surveillance plan, or QASP, is to ensure that reliable, uninterrupted
+services are provided in accordance with the PWS. This plan will also ensure acceptable performance
+and assist in avoiding unnecessary mistakes and/or delays.
+During contract performance, the COR will summarize and document the contractor’s service and delivery
+performance utilizing the following performance categories and standards:
+Completeness - Tasks and deliverables described in Section 3.0 were 100% completed by the
+contractor.
+Effectiveness - Tasks and deliverables provided by the contractor were 100% effective toward
+contributing to the overall success of the project.
+Timeliness - Tasks and deliverables were 100% completed within the agreed-upon schedule and
+specified periods of performance.
+
+16
+Communication - Communication with the Government was 100% professional.
+Surveillance method: random evaluation. This method employs a “spot check” style of evaluation and
+may be adjusted based on quality trends. The Government retains the right to inspect all requirements of
+the order.
+Incentives/Disincentives
+Incentive: If the contractor performs the tasks and deliverables in accordance with the performance
+standards described above, then satisfactory comments/ratings will be documented on the contractor’s
+past performance.
+Disincentive: If the contractor does not perform the tasks and deliverables in accordance with the
+performance standards described above, then unsatisfactory comments/ratings will be documented on
+the contractor’s past performance.
+Performance issues: If the Government evaluations identify unacceptable performance in any of above
+categories, the COR will record it and notify the contractor within three (3) business days. The contractor
+will be required to initial the observation. Initialing of the observation does not constitute contractor
+concurrence with the observation; it only indicates acknowledgement that the contractor has been made
+aware of a potential performance issue(s). The contractor shall meet with the Government for developing
+and implementing a plan to correct any performance issue(s) at no additional cost to the Government. If
+the contractor does not agree with correcting the unacceptable performance issue(s) within the time
+specified by the Government, then the COR will notify the administrative contracting officer, or ACO, who
+will take the appropriate administrative action for unacceptable performance.
+14.0 SECURITY REQUIREMENTS
+The contractor personnel performing services under this order shall comply with all of the security
+requirements listed in Attachment A – Security Requirements.

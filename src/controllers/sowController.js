@@ -60,9 +60,9 @@ const sowController = async (req, res) => {
     //note: here usually result output will contain -- content -- need to parse
 
     // Create a template to feed
-    const template = ` You are a helpful assistant. Help the user write a Statement of Work for a consulting project. 
-    Make sure headers are wrapped in "**". Each section (separated by a header) must be a minimum of 100 words. Write as much as you can for each section. Make sure to include a signing section at the end.  
-  
+    const template = ` You are a helpful assistant. Help the user write a Statement of Work for a consulting project. Add a title page with the name of the project, the name of the client, and the name of the consultant. 
+    Make sure headers are wrapped in "**". Each section (separated by a header) must be a minimum of 100 words. Write as much as you can for each section. Make sure to include a signing section at the end. Do not write the word "Section" before a section in the document.
+
     `;
     // -----------------------------------------------
     //1. GATHER REQUEST BODY AND POPULATING TEMPLATE
@@ -102,6 +102,10 @@ const sowController = async (req, res) => {
                 new TextRun({
                   text: data.replace(/[^a-zA-Z ]/g, ""),
                   bold: true,
+                  font: {
+                    name: "Times New Roman",
+                  },
+                  size: 32, // 1 point = 2 half-points. So, 16 points = 32 half-points.
                 }),
               ],
               spacing: {
@@ -142,14 +146,21 @@ const sowController = async (req, res) => {
           properties: { type: SectionType.CONTINUOUS },
           children: [
             new Paragraph({
-              text: data,
+              children: [
+                new TextRun({
+                  text: data,
+                  font: {
+                    name: "Times New Roman",
+                  },
+                  size: 24, // 1 point = 2 half-points. So, 12 points = 24 half-points.
+                }),
+              ],
               spacing: {
                 before: 100,
               },
               indent: true,
             }),
           ],
-
           footers: {
             default: new Footer({
               children: [
@@ -200,7 +211,7 @@ const sowController = async (req, res) => {
       docStream.end(docBuffer);
 
       const file_name = "output.docx";
-      const key = req.user._id.toString() + '/' + Date.now() + '-' + file_name;
+      const key = req.user._id.toString() + "/" + Date.now() + "-" + file_name;
 
       const params = {
         Bucket: process.env.BUCKET_NAME,
@@ -222,7 +233,7 @@ const sowController = async (req, res) => {
     } catch (err) {
       console.log(err);
     }
-    
+
     return res.status(200).json({ message: "Success" });
     // return res.json({ sow: filledTemplate });
   } catch (error) {
