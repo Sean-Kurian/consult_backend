@@ -1,6 +1,11 @@
 // sow.js
 import { PromptTemplate } from "@langchain/core/prompts";
 import callModelforResult from "../utils/llm.js";
+import s3 from "../models/s3Model.js";
+import { Upload } from "@aws-sdk/lib-storage";
+import { PassThrough } from "stream";
+import { saveFile } from "./fileController.js";
+
 // import * as fs from "fs";
 import {
   Document,
@@ -17,6 +22,9 @@ import {
 
 import fs from "fs";
 import path from "path";
+
+import { config } from "dotenv";
+config();
 
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = dirname(__filename);
@@ -185,6 +193,36 @@ const sowController = async (req, res) => {
       },
     });
 
+    try {
+      // upload to S3
+      const docBuffer = await Packer.toBuffer(doc);
+      const docStream = new PassThrough();
+      docStream.end(docBuffer);
+
+      const file_name = "output.docx";
+      const key = req.user._id.toString() + '/' + Date.now() + '-' + file_name;
+
+      const params = {
+        Bucket: process.env.BUCKET_NAME,
+        Key: key,
+        Body: docStream,
+      };
+
+      const uploads3 = new Upload({
+        client: s3,
+        params,
+      });
+
+      uploads3.on("httpUploadProgress", (progress) => {
+        console.log(progress);
+      });
+
+      await uploads3.done();
+      saveFile(req.user._id.toString(), key); // save to DB
+    } catch (err) {
+      console.log(err);
+    }
+    
     return res.status(200).json({ message: "Success" });
     // return res.json({ sow: filledTemplate });
   } catch (error) {
