@@ -16,16 +16,31 @@ export async function signUp(username, email, password) {
 };
 
 export async function login(email, password) {
-    try{
+    try {
         const user = await User.findByCredentials(email, password);
+
         if (!user) {
             throw new Error('Invalid email or password');
         }
-
+        const username = user.username;
         const token = await user.generateAuthToken();
         
-        return { success: true, token, message: 'Login successful' };
+        return { success: true, token, username, message: 'Login successful' };
     } catch (error) {
         return { success: false, message: error.message };
+    }
+}
+
+export function logout(user_id, token) {
+    try {
+        User.findOneAndUpdate(
+            { _id: user_id },
+            { $pull: { tokens: {token}}},
+            { new: true }
+        ).then( _ => {
+            console.log("Removed token successfully.");
+        });
+    } catch (error) {
+        console.log(error.message);
     }
 }

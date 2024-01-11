@@ -1,6 +1,7 @@
 import express from 'express';
 import multer from 'multer';
-import {signUp, login} from '../controllers/authController.js'
+import authenticateToken from "../middleware/authMiddleware.js";
+import {signUp, login, logout} from '../controllers/authController.js';
 
 const authRouter = express.Router();
 
@@ -19,10 +20,16 @@ authRouter.post('/login', upload.none(), async (req, res) => {
         // Send the token in the response header
         res.header('Authorization', `Bearer ${result.token}`);
         res.header('Access-Control-Expose-Headers', 'Authorization');
-        res.json({ success: true, message: 'Login successful' });
+        res.json({ success: true, message: 'Login successful', username: result.username });
     } else {
         res.json({ success: false, message: result.message });
     }
+});
+
+authRouter.post('/logout', authenticateToken, (req, res) => {
+    const token = req.header('Authorization');
+    logout(req.user._id, token.replace('Bearer ', ''));
+    res.json({message: "Logout request sent"});
 });
 
 export default authRouter;
