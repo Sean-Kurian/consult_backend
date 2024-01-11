@@ -23,7 +23,7 @@ import path from "path";
 
 const currentDir = path.dirname(new URL(import.meta.url).pathname);
 
-// console.log(currentDir);
+console.log(`currentDir: ${currentDir}`);
 
 const sowController = async (req, res) => {
   try {
@@ -65,22 +65,6 @@ const sowController = async (req, res) => {
 
     // Create a PromptTemplate from the template
     const promptTemplate = PromptTemplate.fromTemplate(filledTemplate);
-
-    // // Create a new ChatOpenAI model
-    // const model = new ChatOpenAI({
-    //   temperature: 0,
-    //   modelName: "gpt-4-1106-preview",
-    // });
-
-    // // Create a new StringOutputParser
-    // const outputParser = new StringOutputParser();
-
-    // // Create a RunnableSequence from the PromptTemplate, model, and outputParser
-    // const chain = RunnableSequence.from([promptTemplate, model, outputParser]);
-
-    // // Use the chain to generate the SOW
-    // const result = await chain.invoke();
-    // // docxTemplaterGenerate(result);
 
     // -----------------------------------------------
     //2. CALL LLM CHAIN
@@ -179,38 +163,27 @@ const sowController = async (req, res) => {
       }
     });
 
-    // const footer = {
-    //   footers: {
-    //     default: new Footer({
-    //       children: [
-    //         new Paragraph({
-    //           alignment: AlignmentType.CENTER,
-    //           children: [
-    //             new TextRun("Foo Bar corp. "),
-    //             new TextRun({
-    //               children: ["Page Number: ", PageNumber.CURRENT],
-    //             }),
-    //             new TextRun({
-    //               children: [" to ", PageNumber.TOTAL_PAGES],
-    //             }),
-    //           ],
-    //         }),
-    //       ],
-    //     }),
-    //   },
-    // };
-
-    // console.log(newSection);
-
     const doc = new Document({
       sections: sectionsForOutputDocx,
     });
     // console.log(typeof sectionsForOutputDocx);
     Packer.toBuffer(doc).then((buffer) => {
-      fs.writeFileSync("output.docx", buffer);
+      fs.writeFileSync("src/output.docx", buffer);
     });
 
-    return res.json({ sow: filledTemplate });
+    const outputFilePath = path.join(currentDir, "../output.docx");
+    console.log(outputFilePath);
+
+    res.sendFile(outputFilePath, {
+      headers: {
+        "Content-Type":
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "Content-Disposition": "attachment; filename=sow.docx", //TODO: we can modify this download name, optional
+      },
+    });
+
+    return res.status(200).json({ message: "Success" });
+    // return res.json({ sow: filledTemplate });
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: "Internal Server Error" });
