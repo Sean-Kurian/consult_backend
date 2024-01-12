@@ -187,13 +187,15 @@ const sowController = async (req, res) => {
       sections: sectionsForOutputDocx,
     });
     // console.log(typeof sectionsForOutputDocx);
-    Packer.toBuffer(doc).then((buffer) => {
-      fs.writeFileSync("src/output.docx", buffer);
-      fs.writeFileSync("src/output.docx", buffer);
-    });
+    const buffer = await Packer.toBuffer(doc);
+    fs.writeFileSync("src/output.docx", buffer);
     //TODO optional: previously downloaded in consult_backend/output.docx , however path.join(dir, ".../output.docx") becomes string consult_backend/.../output.docx
     //so output is moved to src/ since ../ dots 2x works
-    const outputFilePath = path.join(currentDir, "../output.docx");
+    // const outputFilePath = path.join(currentDir, "../output.docx");
+
+    //"C:\Users\Sean\Desktop\response.html"
+    const outputFilePath =
+      "C:/Users/Sean/Desktop/consult/consult-backend/src/output.docx"; //This is hard coded
     console.log(outputFilePath);
 
     res.sendFile(outputFilePath, {
@@ -201,6 +203,7 @@ const sowController = async (req, res) => {
         "Content-Type":
           "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
         "Content-Disposition": "attachment; filename=sow.docx", //TODO: we can modify this download name, optional
+        "X-Success-Message": "Success",
       },
     });
 
@@ -234,7 +237,6 @@ const sowController = async (req, res) => {
       console.log(err);
     }
 
-    return res.status(200).json({ message: "Success" });
     // return res.json({ sow: filledTemplate });
   } catch (error) {
     console.error(error);
