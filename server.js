@@ -15,7 +15,7 @@ const port = 5000;
 
 app.use(
   cors({
-    origin: "http://http://3.130.6.61:3000/:3000", // replace with the URL of your React app
+    origin: "http://3.130.6.61:3000", // replace with the URL of your React app
   })
 );
 
