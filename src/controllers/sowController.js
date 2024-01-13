@@ -189,15 +189,12 @@ const sowController = async (req, res) => {
     // console.log(typeof sectionsForOutputDocx);
     const buffer = await Packer.toBuffer(doc);
     fs.writeFileSync("src/output.docx", buffer);
-    //TODO optional: previously downloaded in consult_backend/output.docx , however path.join(dir, ".../output.docx") becomes string consult_backend/.../output.docx
-    //so output is moved to src/ since ../ dots 2x works
+
     let outputFilePath = path.join(currentDir, "../output.docx");
     if (outputFilePath.startsWith("\\")) {
       outputFilePath = outputFilePath.slice(1);
     }
-    //"C:\Users\Sean\Desktop\response.html"
-    // const outputFilePath =
-    //   "C:/Users/Sean/Desktop/consult/consult-backend/src/output.docx"; //This is hard coded
+
     console.log(outputFilePath);
 
     res.sendFile(outputFilePath, {
